@@ -1,0 +1,509 @@
+@font-face {
+  font-family: 'Wooper'; /* Name the font whatever you like */
+  src: url('Wooper.ttf') format('truetype'); /* Replace 'path/to/your/font-file.ttf' with the actual path to your .ttf file */
+  /* You can also include additional font formats (e.g., woff, woff2) for better browser support */
+}
+
+
+.container {
+    /* width: 95%;
+    margin: auto;
+    margin-top: 16px; 
+    padding: 12px; 
+    border-radius: 8px;
+    color: rgb(29, 5, 5);
+    background-color: navy;
+    */
+    width: 1400px;
+    height: 1238px;
+    flex-shrink: 0;
+    padding: 50px;
+
+
+  }
+
+ 
+.title {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 550%;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%;
+  }
+
+
+  .title1 {
+    background: linear-gradient(90deg, #A968E7 0%, #FD479A 100%);
+    background-clip: text;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 550%;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%;
+  }
+
+  
+  .homeimg {
+    display: flex;
+    width: 1280px;
+ 
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 32px;
+    max-width: calc(100% - 30px);
+    margin: auto;
+  }
+
+  .section2 {
+    align-items: center;
+  }
+
+
+  .img2 {
+
+    margin-top: -35%;
+    margin-left: 60%;
+    width: 35%;
+    height: auto;
+    max-width: calc(100% - 30px);
+
+
+  }
+  
+  .title3 {
+    width: 100%;
+    color: #FFF;
+    font-family: 'Jost', sans-serif;
+    font-size: 5vw; /* Adjust the value based on your preference */
+    font-style: normal;
+    font-weight: 900;
+    display: flex;
+    align-items: left;
+    text-align: center;
+    line-height: 0.5; /* Adjust the line-height based on your preference */
+    margin-left: 4%; /* Use percentage or other relative units for margin */
+  }
+
+  @media screen and (max-width: 400px) {
+    .title3 {
+      font-size: 2vw; /* Reduce the font size for smaller screens */
+      line-height: 20px; /* You can adjust this value to control the line height */
+    }
+  }
+  
+
+.titlecontain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+
+.buttonholder {
+    margin-left: 10%;
+    margin-top: 25%;
+    display: inline-flex;
+    padding: 1px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #FCEE62 0%, #EA3CF1 100%);
+}
+
+.buttonlabel {
+    color: #000;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 70%; /* 120% */
+}
+
+.some-stage-helps {
+  color: #a1a1a1;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2vw;
+  font-weight: 500;
+  line-height: 2.5vw;
+  align-items: left;
+  top: 627px;
+  width: 60%;
+  display: flex;
+  margin-left: 4%;
+}
+
+.seperator {
+  margin-top: -200px;
+  width: 98%;
+  height: auto;
+  max-width: calc(100% - 30px);
+
+}
+
+.section3im1 {
+  
+  font-family: 'Jost', sans-serif;
+  color: #FFF;
+  font-size: 3vw;
+  font-weight: 900;
+  margin-left: 60%;
+  margin-top: 4%;
+  width: 35%;
+  height: auto;
+  max-width: calc(100% - 30px);
+  
+}
+
+.roadmap {
+  margin-right: 70%;
+  margin-left: 10%;
+  margin-top: -10%;
+  width: 10%;
+  height: auto;
+  max-width: calc(100% - 60px) ;
+
+}
+
+.addbutton {
+  color: #FFF !important;
+  width: 29%;
+  
+  
+}
+
+.firststageplan {
+  color: #FFF;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7%; /* 125% */
+  margin-left: 4%;
+}
+
+.firstpart {
+  color: #A1A1A1;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3vw; /* 140% */
+  width: 50vw; 
+  margin-left: 4%;
+  margin-top: 1%;
+}
+
+.moneyicon {
+  margin-left: 60%;
+  margin-top: -10%;
+  width: 35%;
+  height: auto;
+ 
+
+}
+
+.rightvector {
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 1vw;
+  width: 80%
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+}
+
+.Frame {
+  margin-left: 6%;
+  height: 20%;
+  width: 15%; 
+  max-height: calc(100% - 80px) ;
+}
+
+.stageplan2 {
+  color: #FFF;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 300;
+  margin-left: 35%;
+  margin-top: -15%;
+  width: 40vw;
+}
+
+.addbutton2 {
+  color: #FFF !important;
+  width: 10%;
+}
+
+.secondpart {
+  color: #A1A1A1;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3vw; /* 140% */
+  width: 50vw; 
+  margin-left: -35vw;
+
+  margin-top: 1%;
+
+}
+.stage2con {
+  margin-top: -20%;
+  margin-left: 80%;
+  
+}
+
+.leftvector {
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 3vw;
+  width: 80%
+}
+
+.container3 {
+  display: flex;
+  align-items: center;
+}
+
+.Frame1 {
+  margin-left: 75%;
+  height: 30%;
+  width: 18%; 
+  max-height: calc(100% - 80px);
+  
+}
+
+.stageplan3 {
+  color: #FFF;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7%; /* 125% */
+  margin-left: -89%;
+  margin-top: -5vw;
+}
+.stage3con {
+  margin-top: -14vw;
+}
+
+.addbutton3 {
+  color: #FFF !important;
+  width: 25%;
+}
+.thirdpart {
+  color: #A1A1A1;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3vw; /* 140% */
+  width: 50vw; 
+  margin-left: 4%;
+  margin-top: 1%;
+}
+
+.moneyicon2 {
+  width: 20vw;
+  transform: rotate(20deg); 
+}
+
+.stageplan4 {
+  color: #FFF;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 300;
+  margin-left: 55%;
+  margin-top: -5%;
+
+}
+
+.stage4con {
+  margin-top: -14vw;
+  margin-top: 2%;
+  margin-left: 80%;
+}
+
+.addbutton4 {
+  color: #FFF !important;
+  width: 10%;
+}
+.fourthpart {
+  color: #A1A1A1;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3vw; /* 140% */
+  width: 50vw; 
+  margin-left: -35vw;
+  margin-top: 1%;
+}
+
+.Frame2 {
+  margin-left: 80%;
+  height: 20%;
+  width: 12%; 
+  max-height: calc(100% - 80px) ;
+}
+
+.readmore {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  font-size: 5vw;;
+  font-weight: 900;
+  line-height: 5vw; /* 125% */
+  
+  }
+
+  .seperator1 {
+    margin-top: 200px;
+    width: 98%;
+    height: auto;
+    max-width: calc(100% - 30px);
+  
+  }
+
+  /* carousel.css */
+
+/* Style for the carousel container */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for each carousel item */
+.carousel-item {
+  position: relative;
+  margin: 10px;
+}
+
+/* Style for the black rectangle frame */
+.carousel-image {
+  width: 100%;
+  border: 0.5vw solid rgb(236, 177, 99);
+  border-radius: 2.9vw;
+}
+
+/* Style for the caption at the bottom of the image */
+.carousel-caption {
+  /*
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transform: translateX(-50%);
+  background-color: rgb(189, 170, 0);
+  */ 
+  color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2vw;
+  text-align: left;
+  color: #A1A1A1;
+}
+.carousel-text {
+  color:white; 
+  font-size: 3vw;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.carousel-date {
+  color: #A1A1A1;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 160% */
+}
+
+
+.lastsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mission {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  font-size: 5vw;;
+  font-weight: 900;
+  line-height: 3vw; /* 125% */
+  margin-top: 15vw;
+}
+
+.mission-sub {
+color: #A1A1A1;
+text-align: center;
+font-family: 'Plus Jakarta Sans', sans-serif;
+font-size: 2vw;
+justify-content: center;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; 
+padding: 1% 20%;
+}
+
+@media screen and (max-width: 420px) {
+  .mission-sub {
+    font-size: 0.3vw; /* Reduce the font size to 4vw on smaller screens */
+    line-height: 0.5; /* Adjust the line height for better spacing between lines */
+  }
+}
+
+.join-button {
+  margin-top: 1vw; /* Add some spacing between the text and the button */
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 1vw 2vw;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2vw;
+  font-weight: 500;
+  cursor: pointer;
+  
+}
+
+
+.layer2 {
+  position: absolute; 
+  top: 60%; /* Adjust the vertical position as needed */
+  left: 50%; /* Adjust the horizontal position as needed */
+  transform: translate(-50%, -50%); 
+  width: 45%;
+}
+
+
+.layer1 {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  
+}
+.page-end {
+  position: relative; /* Make the container a reference for positioning the top image */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Adjust the width as needed */
+  height: 100%;
+}
+
