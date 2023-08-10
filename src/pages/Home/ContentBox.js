@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
-import GradeTwoToneIcon from '@mui/icons-material/GradeTwoTone';
 import { Paper, Box } from '@mui/material';
-import Carousel from "react-elastic-carousel";
 import IconButton from '@mui/material/IconButton';
 import { styled } from '@mui/system';
 import homeim from './somestagehome.png';
 import img2 from './img2.png'; 
+import artists from './artistsaudiences.png';
 import layer_1 from './Layer_1.png'; 
 import layer_2 from './Layer_2.png'; 
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
@@ -15,15 +13,20 @@ import sec3im1 from './section3im1.png'
 import roadmap from './roadmap.png'
 import moneyicon from './moneyicon.png'
 import Frame from './Frame.png'
+import Carousal from "@itseasy21/react-elastic-carousel";
 import c1 from './carouselim1.png'
 import c2 from './carouselim2.png'
+import c3 from './carouselim3.jpeg'
 import Frame1 from './Frame1.png'
 import moneyicon2 from './moneyicon2.png'
 import Frame2 from './Frame2.png'
 import Vector8 from './Vector8.png'
 import Vector9 from './Vector9.png'
+import videoFile from './somestagevid.mp4'
 import Button from '@mui/material/Button';
 import "./ContentBox.css"; 
+import { FaCircle, FaStar, FaMusic } from 'react-icons/fa';
+
 
 const Container = styled(Paper)(({ theme }) => ({
     backgroundColor: 'black',
@@ -74,7 +77,11 @@ const ContentBox = () => {
   const handleIconButtonClick4 = () => {
     setShowMessage3(true);
   };
-  
+  const [showMessage4, setShowMessage4] = useState(false);
+
+  const handleIconButtonClick5 = () => {
+    setShowMessage4(true);
+  };
   
   
   
@@ -84,29 +91,32 @@ const ContentBox = () => {
   
   return (
     <Container elevation={3}>
-
+    {/*
       <h1 className="title">Artists & Audiences </h1>
       <h1 className= "title1">Above All</h1>
-      <img src={homeim} alt="main image" className="homeimg" style={{
+       <img src={homeim} alt="main image" className="homeimg" style={{
+        margin: 'auto',
+      }} /> */ }
+
+    <img src={artists} alt="artists" className="artists" style={{
         margin: 'auto',
       }} />
-      
+      <video autoPlay controls className="homeimg">
+        <source src={videoFile} type="video/mp4"  />
+     
+      </video>
+
       <div className="section2">
       
       <div className="buttonholder"> 
-      <h1 className="buttonlabel">ABOUT US</h1>
+      <h1 className="buttonlabel">Our Mission</h1>
       </div>
 
-      <h1 className= "title3">Get more from</h1><h1 className
-      ="title3">your streams</h1>
+      <h1 className= "title3">GET AMPED</h1>
               <p className="some-stage-helps">
-              Some · Stage helps creators to avoid the social platform fees
-      
-              and get their stream revenues straight into their own hands.
-      
-              Communicate with your fans, get more from the tickets that
-           
-              they are own, and get the progressive income stream.
+              At Some·Stage, we're tuning the frequency of live music to a whole new key!
+              </p><p className="some-stage-helps">
+              It’s simple, we unite artists and audiences in a shared spotlight within an immersive world. Fans have the power to customize their concert experiences while artists are amplified to connect with their global fanbase like never before. Step into Some•Stage and feel the rhythm of a concert experience reimagined, where every beat hits closer to home.
             </p>
       <img src={img2} alt="image2" className="img2" style={{
       }} />
@@ -121,20 +131,22 @@ const ContentBox = () => {
 
       <div className="section3"> 
       
-      <h1 className="section3im1">Here are our plans for the future</h1>
+      <h1 className="section3im1">TOUR WITH US</h1>
     
  
 
       <img src={roadmap} alt="roadmap" className="roadmap" style={{
       }} />
-      <h1 className="firststageplan">First Stage Plan</h1>
+      <h1 className="firststageplan">Tour Dates Announced</h1>
       <IconButton variant="contained" onClick={handleIconButtonClick} className="addbutton">
         <AddOutlinedIcon />
       </IconButton>
 
       {/* Text to display when the button is clicked */}
       {showMessage && (
-        <p className="firstpart">Odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Nec sagittis aliquam malesuada bibendum arcu. Semper risus in hendrerit gravida rutrum quisque non. Pellentesque eu tincidunt tortor aliquam nulla facilisi.</p>
+        <p className="firstpart">
+          Brace yourselves, music lovers! some·stage is plugging in to shake up your concert experience. We're calling all fans to join the journey, take our survey, and help us fine-tune this rocking revolution. Your input will help us set the stage.
+        </p>
       )}
       <img src={moneyicon} alt="moneyicon" className="moneyicon" style={{
       }} />
@@ -144,7 +156,7 @@ const ContentBox = () => {
       <div className="container2">
       <img src={Frame} alt="Frame" className="Frame" style={{
       }} />
-      <h1 className="stageplan2">Nisl nunc mi ipsum faucibus</h1>
+      <h1 className="stageplan2">Backstage Access</h1>
       </div>
 
 
@@ -155,16 +167,20 @@ const ContentBox = () => {
       </IconButton>
       {/* Text to display when the button is clicked */}
       {showMessage1 && (
-        <p className="secondpart">Odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Nec sagittis aliquam malesuada bibendum arcu. Semper risus in hendrerit gravida rutrum quisque non. Pellentesque eu tincidunt tortor aliquam nulla facilisi.</p>
+        <p className="secondpart">
+          Fancy a sneak peek at the future of concerts? By banding together with us early, you'll get the inside scoop on prototypes and score exclusive perks. This isn't just about attending a concert—it's about crafting the show together.
+        </p>
       )}
       </div>
       
       <img src={Vector9} alt="leftvector" className="leftvector" style={{
       }} />
+
+
     <div className="container3"> 
     <img src={Frame1} alt="Frame1" className="Frame1" style={{
       }} />
-      <h1 className="stageplan3">Montes nascetur ridiculus</h1>
+      <h1 className="stageplan3">Sound Check</h1>
     </div>
     <div className="stage3con">
       <IconButton variant="contained" onClick={handleIconButtonClick3} className="addbutton3">
@@ -172,7 +188,9 @@ const ContentBox = () => {
       </IconButton>
       {/* Text to display when the button is clicked */}
       {showMessage2 && (
-        <p className="thirdpart">Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Et tortor at risus viverra adipiscing. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Blandit cursus risus at ultrices mi tempus imperdiet.</p>
+        <p className="thirdpart">
+          By fall 2023, we're dropping a prototype that's going to be music to your ears. Our community members will get the all-access pass to artist performances and a behind-the-scenes look at the creation process. Artists, your stage is waiting!
+        </p>
       )}
       </div>
       
@@ -181,7 +199,9 @@ const ContentBox = () => {
       <div className="container4">
       <img src={moneyicon2} alt="moneyicon2" className="moneyicon2" style={{
       }} />
-      <h1 className="stageplan4">Odio tempor orci dapibus</h1>
+      
+      
+      <h1 className="stageplan4">Green Room Hangs</h1>
       </div>
 
       <div className="stage4con">
@@ -190,7 +210,9 @@ const ContentBox = () => {
       </IconButton>
       {/* Text to display when the button is clicked */}
       {showMessage3 && (
-        <p className="fourthpart">Odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Nec sagittis aliquam malesuada bibendum arcu. Semper risus in hendrerit gravida rutrum quisque non. Pellentesque eu tincidunt tortor aliquam nulla facilisi.</p>
+        <p className="fourthpart">
+          Join early and reap the rewards. Think exclusive events, inviting perks, and first dibs on pre-sale tickets for our virtual concert. Together, let's tune up an immersive concert environment that hits all the right notes.
+        </p>
       )}
       </div>
       <img src={Vector9} alt="leftvector" className="leftvector" style={{
@@ -199,15 +221,17 @@ const ContentBox = () => {
     <div className="container3"> 
     <img src={Frame2} alt="Frame2" className="Frame2" style={{
       }} />
-      <h1 className="stageplan3">Montes nascetur ridiculus</h1>
+      <h1 className="stageplan5">Setlist Selection</h1>
     </div>
-    <div className="stage3con">
-      <IconButton variant="contained" onClick={handleIconButtonClick3} className="addbutton3">
+    <div className="stage5con">
+      <IconButton variant="contained" onClick={handleIconButtonClick5} className="addbutton3">
         <AddOutlinedIcon />
       </IconButton>
       {/* Text to display when the button is clicked */}
-      {showMessage2 && (
-        <p className="thirdpart">Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Et tortor at risus viverra adipiscing. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Blandit cursus risus at ultrices mi tempus imperdiet.</p>
+      {showMessage4 && (
+        <p className="thirdpart">
+          We're dialing in the talent you love! As we sign on big-name artists, you'll be front-row for the announcements. Because at Some·Stage, you're not just part of the crowd, control of the concert is in your hands!
+        </p>
       )}
       </div>
     </div>
@@ -217,40 +241,98 @@ const ContentBox = () => {
       }} />
 
     <div className="Section3">
-      <h1 className="readmore">Read More About 
-      <br />Our Journey</h1>
 
+      
+      <h1 className="readmore">CREATE BIGGER CATALOG 
+      <br />(the deep cuts)
+      <div className="icon-con">
+      <FaMusic className="music3" />
+      <FaStar className="star2" />
+      <FaCircle className="circle3" />
+      
+      <FaMusic className="music" />
+      <FaCircle className="FaCircle"/>
+      <FaMusic className="music2" />
+      
+      <FaStar className="star" />
+
+      
+      </div>
+      </h1>
+
+      
+      
+     
 
       <div className="carousel-container">
-      <Carousel itemsToShow={2} pagination={false}>
+      <Carousal itemsToShow={2} pagination={false}>
         <div className="carousel-item">
           <img src={c1} alt="c1" className="carousel-image" />
           <h2 className="carousel-date">JUN 19, 2023</h2>
-          <h1 className="carousel-text">New affiliate program!</h1>
-          <h2 className="carousel-caption">Some · Stage helps creators to avoid the social platform fees and get their stream revenues...</h2>
+          <h1 className="carousel-text">Getting the Gang Together</h1>
+          <h2 className="carousel-caption">
+          Dive into the inspiring journey of the visionary behind Some·Stage, and discover how he plans to transform the music industry forever...
+          </h2>
         </div>
         <div className="carousel-item">
           <img src={c2} alt="c2" className="carousel-image" />
           <h2 className="carousel-date">JUN 19, 2023</h2>
-          <h1 className="carousel-text">New affiliate program!</h1>
-          <h2 className="carousel-caption">Some · Stage helps creators to avoid the social platform fees and get their stream revenues...</h2>
+          <h1 className="carousel-text">The State of the Industry</h1>
+          <h2 className="carousel-caption">
+          Unpack the current state of the music industry with us, as we shine a spotlight on the challenges artists and audiences face today...
+          </h2>
         </div>
+
+      
         <div className="carousel-item">
-          <img src={c2} alt="c2" className="carousel-image" />
+          <img src={c3} alt="c3" className="carousel-image" />
           <h2 className="carousel-date">JUN 19, 2023</h2>
-          <h1 className="carousel-text">New affiliate program!</h1>
-          <h2 className="carousel-caption">Some · Stage helps creators to avoid the social platform fees and get their stream revenues...</h2>
+          <h1 className="carousel-text">Behind the Scenes</h1>
+          <h2 className="carousel-caption">Step backstage for an in-depth tour of the Some·Stage experience. Learn what our platform has in store for audiences and the exciting new experiences that await you.</h2>
         </div>
-        {/* Add more carousel items if needed */}
-      </Carousel>
+        
+
+      </Carousal>
     </div>
+
+    <div className="icon-container"> 
+    <FaStar className="s1" />
+    <FaCircle className="c1" />
+    <FaMusic className='m1' />
+    <FaCircle className="c2" />
+    <FaStar className="s2" />
+    <FaMusic className='m2' />
+  
+       </div> 
+    
     
     <div className="lastsection">
-    <h1 className="mission">Join The Mission</h1>
-    <h2 className="mission-sub">We would love to get your feedback through a 2 min Typeform, and collect some thoughts about how we can improve our product.</h2>
-    <button className="join-button">Join our Discord</button>
-    
+    <h1 className="mission">
+      JOIN THE BAND
+    </h1>
+    <h2 className="mission-sub">
+      Ready to rock?  <br />
+      Head back stage and join us to get in tune with fellow members, jam with the artists, and score VIP access to products, early events, and more!
+      <br /> <br />
+      GANG!
+      
+    </h2>
+
+    <a href='https://discord.com/invite/QCjqu3KppW'>
+    <button className="join-button">
+      Head Backstage
+    </button>
+    </a>
+ 
     </div>
+    <div className="icon-container"> 
+    <FaCircle className="FaCircle3" />
+    <FaMusic className='music5' />
+    <FaMusic className='music4' />
+    <FaStar className="star4" />
+    <FaCircle className="FaCircle1" />
+       </div> 
+    
     
       <div className="page-end">
       <div className="layer-container2">

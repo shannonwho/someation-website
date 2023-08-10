@@ -22,7 +22,12 @@
 
   }
 
- 
+  .artists {
+    align-items: center;
+    width: 100%;
+  }
+
+
 .title {
     color: #FFF;
     text-align: center;
@@ -63,12 +68,13 @@
 
   .section2 {
     align-items: center;
+    margin-top: -10%;
   }
 
 
   .img2 {
 
-    margin-top: -35%;
+    margin-top: -40%;
     margin-left: 60%;
     width: 35%;
     height: auto;
@@ -80,15 +86,16 @@
   .title3 {
     width: 100%;
     color: #FFF;
-    font-family: 'Jost', sans-serif;
+    font-family: Wooper;
     font-size: 5vw; /* Adjust the value based on your preference */
     font-style: normal;
-    font-weight: 900;
+    font-weight: 400;
     display: flex;
     align-items: left;
     text-align: center;
     line-height: 0.5; /* Adjust the line-height based on your preference */
-    margin-left: 4%; /* Use percentage or other relative units for margin */
+    margin-left: 4%; 
+    margin-top: 5vw;
   }
 
   @media screen and (max-width: 400px) {
@@ -112,7 +119,7 @@
     margin-left: 10%;
     margin-top: 25%;
     display: inline-flex;
-    padding: 1px 10px;
+    padding: 0.1vw 2.5vw;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
@@ -121,22 +128,22 @@
 
 .buttonlabel {
     color: #000;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 2vw;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 2.5vw;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 400;
     line-height: 70%; /* 120% */
 }
 
 .some-stage-helps {
   color: #a1a1a1;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Be Vietnam Pro';
   font-size: 2vw;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 2.5vw;
   align-items: left;
   top: 627px;
-  width: 60%;
+  width: 50%;
   display: flex;
   margin-left: 4%;
 }
@@ -151,13 +158,14 @@
 
 .section3im1 {
   
-  font-family: 'Jost', sans-serif;
+  font-family: Wooper;
   color: #FFF;
-  font-size: 3vw;
-  font-weight: 900;
-  margin-left: 60%;
+  font-size: 6vw;
+  font-weight: 400;
+  margin-left: 30%;
+  text-align: right;
   margin-top: 4%;
-  width: 35%;
+  width: 60%;
   height: auto;
   max-width: calc(100% - 30px);
   
@@ -182,24 +190,25 @@
 
 .firststageplan {
   color: #FFF;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 3vw;
+  font-family: Gochi Hand;
+  font-size: 4vw;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 7%; /* 125% */
   margin-left: 4%;
 }
 
 .firstpart {
   color: #A1A1A1;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: Be Vietnam Pro;
   font-size: 2vw;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 3vw; /* 140% */
   width: 50vw; 
   margin-left: 4%;
   margin-top: 1%;
+  margin-bottom: -20%;
 }
 
 .moneyicon {
@@ -222,37 +231,39 @@
 .container2 {
   display: flex;
   align-items: center;
+  
 }
 
 .Frame {
   margin-left: 6%;
   height: 20%;
-  width: 15%; 
+  width: 12%; 
+  margin-bottom: 5%;
   max-height: calc(100% - 80px) ;
 }
 
 .stageplan2 {
   color: #FFF;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 3vw;
+  font-family: Gochi Hand;
+  font-size: 4vw;
   font-style: normal;
-  font-weight: 300;
-  margin-left: 35%;
-  margin-top: -15%;
+  font-weight: 400;
+  margin-left: 40%;
+  margin-top: -20%;
   width: 40vw;
 }
 
 .addbutton2 {
   color: #FFF !important;
-  width: 10%;
+  width: 5%;
 }
 
 .secondpart {
   color: #A1A1A1;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: Be Vietnam Pro;
   font-size: 2vw;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 3vw; /* 140% */
   width: 50vw; 
   margin-left: -35vw;
@@ -261,7 +272,7 @@
 
 }
 .stage2con {
-  margin-top: -20%;
+  margin-top: -25%;
   margin-left: 80%;
   
 }
@@ -277,6 +288,7 @@
 .container3 {
   display: flex;
   align-items: center;
+  margin-top: -5%;
 }
 
 .Frame1 {
@@ -289,16 +301,16 @@
 
 .stageplan3 {
   color: #FFF;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 3vw;
+  font-family: Gochi Hand;
+  font-size: 4vw;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 7%; /* 125% */
   margin-left: -89%;
   margin-top: -5vw;
 }
 .stage3con {
-  margin-top: -14vw;
+  margin-top: -15%;
 }
 
 .addbutton3 {
@@ -307,10 +319,10 @@
 }
 .thirdpart {
   color: #A1A1A1;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: Be Vietnam Pro;
   font-size: 2vw;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 3vw; /* 140% */
   width: 50vw; 
   margin-left: 4%;
@@ -324,12 +336,12 @@
 
 .stageplan4 {
   color: #FFF;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 3vw;
+  font-family: Gochi Hand;
+  font-size: 4vw;
   font-style: normal;
-  font-weight: 300;
-  margin-left: 55%;
-  margin-top: -5%;
+  font-weight: 400;
+  margin-left: 60%;
+  margin-top: -10%;
 
 }
 
@@ -343,17 +355,33 @@
   color: #FFF !important;
   width: 10%;
 }
+
+.stage5con {
+  margin-top: -20%;
+}
 .fourthpart {
   color: #A1A1A1;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: Be Vietnam Pro;
   font-size: 2vw;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 3vw; /* 140% */
   width: 50vw; 
   margin-left: -35vw;
   margin-top: 1%;
 }
+
+.stageplan5 {
+  color: #FFF;
+  font-family: Gochi Hand;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 7%; /* 125% */
+  margin-left: -89%;
+  margin-top: -10%;
+}
+
 
 .Frame2 {
   margin-left: 80%;
@@ -363,17 +391,18 @@
 }
 
 .readmore {
-  color: #FFF;
+  color: #E2DFDF;
   text-align: center;
-  font-family: 'Jost', sans-serif;
+  font-family: Wooper;
   font-size: 5vw;;
-  font-weight: 900;
-  line-height: 5vw; /* 125% */
+  font-weight: 400;
+  line-height: 125%; /* 125% */
+  
   
   }
 
   .seperator1 {
-    margin-top: 200px;
+    margin-top: 20%;
     width: 98%;
     height: auto;
     max-width: calc(100% - 30px);
@@ -387,6 +416,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -40%;
 }
 
 /* Style for each carousel item */
@@ -413,7 +443,8 @@
   background-color: rgb(189, 170, 0);
   */ 
   color: white;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: Be Vietnam Pro;
+  font-weight: 600;
   font-size: 2vw;
   text-align: left;
   color: #A1A1A1;
@@ -421,7 +452,8 @@
 .carousel-text {
   color:white; 
   font-size: 3vw;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: Gochi Hand;
+  font-weight: 400;
 }
 
 .carousel-date {
@@ -438,13 +470,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -30%;
 }
 .mission {
-  color: #FFF;
+  color: #E2DFDF;
   text-align: center;
-  font-family: 'Jost', sans-serif;
-  font-size: 5vw;;
-  font-weight: 900;
+  font-family: Wooper;
+  font-size: 6vw;
+  font-weight: 400;
   line-height: 3vw; /* 125% */
   margin-top: 15vw;
 }
@@ -452,13 +485,14 @@
 .mission-sub {
 color: #A1A1A1;
 text-align: center;
-font-family: 'Plus Jakarta Sans', sans-serif;
+font-family: Be Vietnam Pro;
 font-size: 2vw;
 justify-content: center;
 font-style: normal;
-font-weight: 500;
+font-weight: 600;
 line-height: 140%; 
 padding: 1% 20%;
+margin-top: -2%;
 }
 
 @media screen and (max-width: 420px) {
@@ -475,9 +509,9 @@ padding: 1% 20%;
   padding: 1vw 2vw;
   border: none;
   border-radius: 5px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 2vw;
-  font-weight: 500;
+  font-family: Gochi Hand;
+  font-size: 2.5vw;
+  font-weight: 600;
   cursor: pointer;
   
 }
@@ -507,3 +541,163 @@ padding: 1% 20%;
   height: 100%;
 }
 
+.FaCircle {
+  color: rgba(103, 250, 250, 0.938);
+  width: 6%;
+  height: 5%;
+  margin-right: 60%;
+  margin-top: -20%;
+  position: relative;
+}
+
+.star {
+  width: 4%;
+  height: 4%;
+  color: #EA3CF1;
+  margin-left: 90%;
+  margin-bottom: 40%;
+  margin-top: -10%;
+
+}
+
+.music {
+  margin-top: -10%;
+  margin-bottom: 8%;
+  width: 3%;
+  height: 3%;
+  
+  color: #FD479A;
+}
+
+.music3 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: -10%;
+  margin-bottom: 7%;
+  color: #FCEE62;
+}
+
+.music2 {
+  width: 4%;
+  height: 4%;
+  color: #88e998;
+  margin-left: 10%;
+  margin-bottom: 13%;
+  margin-top: -60%;
+  
+}
+
+.circle3 {
+  width: 3%;
+  height: 5%;
+  color: #A968E7;
+  margin-left: 60%;
+  margin-top: -40%; 
+  margin-bottom: 20%;
+  
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+.star4 {
+  color: #FCEE62;
+  margin-left: 30%;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  width: 3vw;
+  height: auto;
+  
+}
+
+.music4 {
+ color: #ff4e9ecc;
+  margin-bottom: 20%;
+ 
+  width: 5vw;
+  height: 3vw;
+  position: absolute; /* Use absolute positioning for the icon */
+  right: 20%; /* Position the icon to the right edge */
+  top: 60%; /* Position the icon vertically in the middle */
+  left: 80%;
+}
+
+.FaCircle1 {
+  color: rgba(103, 250, 250, 0.938);
+  width: 6%;
+  height: 5%;
+  
+  margin-left: 8%;
+  margin-top: -20%;
+  position: relative;
+}
+
+.music5 {
+  color: #88e998;
+  width: 7%;
+  height: 10%;
+}
+.FaCircle3 {
+  color: rgba(147, 103, 250, 0.938);
+  width: 3%;
+  height: 5%;
+  
+  margin-left: -15%;
+  margin-top: -20%;
+  position: relative;
+}
+
+
+
+.s1 {
+  color: #88e998;
+  width: 7%;
+  height: 10%;
+}
+
+c1 {
+  color: #FCEE62;
+
+  width: 3vw;
+  height: auto;
+}
+
+.m1 {
+  color: #FCEE62;
+  margin-left: 8%;
+  margin-bottom: 30%;
+  margin-top: 5%;
+  width: 4%;
+  height: auto;
+}
+
+.c2 {
+  color: #fc6290;
+  margin-left: 20%;
+  margin-bottom: 8%;
+  margin-top: 0%;
+  width: 3vw;
+  height: auto;
+}
+
+.s2 {
+  color: #62cbfc;
+  margin-left: 25%;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  width: 3vw;
+  height: auto;
+}
+.m2 {
+  color: #62fc88;
+  margin-left: 4%;
+  margin-bottom: 10%;
+  margin-top: 20%;
+  width: 6%;
+  height: auto;
+}

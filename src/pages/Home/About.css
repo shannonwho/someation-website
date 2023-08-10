@@ -1,0 +1,15 @@
+body {
+    background-color: #FD479A;
+  }
+
+.tool {
+    background-color: black;
+}
+
+.maintitle {
+    
+    background: linear-gradient(90deg, #A968E7 0%, #FD479A 100%);
+    background-clip: text; 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 900;
+}

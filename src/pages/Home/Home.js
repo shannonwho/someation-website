@@ -9,7 +9,6 @@ const Home = () => {
         <div className= "home-container">
 
             <Navbar />
-      
              <ContentBox />
              <Footer />
             <div className = "main-content">

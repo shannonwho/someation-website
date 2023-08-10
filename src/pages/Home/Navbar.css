@@ -4,8 +4,13 @@ nav {
     justify-content: space-between;
     padding: 0px;
     border: none;
+    margin-bottom: -1%;
+  
 
   }
+
+ 
+ 
   
   .nav-left {
     display: flex;
@@ -14,11 +19,14 @@ nav {
     
   }
   
+
+
   .nav-left li {
     margin-right: 10px; /* Adjust the spacing between the tabs */
     color: white; /* Set the text color of the tabs to white */
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1.5vw;
+    font-family: Gochi Hand;
+    font-size: 2vw;
+    font-weight: 400;
   }
   
   .nav-middle {
@@ -39,6 +47,10 @@ nav {
     0.2vw 0.2vw 0 black;
 
   }
+
+  .logo {
+    width: 10%;
+  }
   
   .nav-right {
     text-align: right;
@@ -48,12 +60,13 @@ nav {
   button {
     background-color: white;
     color: black;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: Gochi Hand;
     border-radius: 10px;
-    font-size: 1.5vw;
-    padding: 6px 14px; /* Adjust the padding as needed */
-    border: none; /* Remove the button outline */
- /* Adjust the margin to align the button with the text */
+    font-size: 2vw;
+    padding: 6px 14px; 
+    border: none; 
+    cursor: pointer;
+
 
   }
   
