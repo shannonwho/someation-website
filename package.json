@@ -1,7 +1,7 @@
 {
   "name": "someation",
-  "homepage": "{Amplify-URL}/#/",
   "version": "0.1.0",
+  "homepage": "https://d7bfd50lik1ba.cloudfront.net",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
