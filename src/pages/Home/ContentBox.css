@@ -460,7 +460,7 @@
   */ 
   color: white;
   font-family: Be Vietnam Pro;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2vw;
   text-align: left;
   color: #A1A1A1;
@@ -717,4 +717,8 @@ c1 {
   margin-top: 20%;
   width: 6%;
   height: auto;
+}
+
+.no-underline {
+  text-decoration: none;
 }

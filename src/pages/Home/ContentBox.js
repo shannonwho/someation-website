@@ -93,25 +93,37 @@ const ContentBox = () => {
   const items = [
     // Replace with your individual carousel items
     <div className="carousel-item">
-      <img src={c1} alt="c1" className="carousel-image" />
+      <a href="https://someation.medium.com/getting-the-gang-together-1f74ace10b3a" class="no-underline">
+        <img src={c1} alt="c1" className="carousel-image" />
+      </a>
       <h2 className="carousel-date">JUN 19, 2023</h2>
-      <h1 className="carousel-text">Getting the Gang Together</h1>
+      <a href="https://someation.medium.com/getting-the-gang-together-1f74ace10b3a" class="no-underline">
+       <h1 className="carousel-text">Getting the Gang Together</h1>
+      </a>
       <h2 className="carousel-caption">
         Dive into the inspiring journey of the visionary behind Some·Stage, and discover how he plans to transform the music industry forever...
       </h2>
     </div>,
     <div className="carousel-item">
-      <img src={c2} alt="c2" className="carousel-image" />
+      <a href="https://someation.medium.com/the-state-of-the-industry-6068e3d226b7" class="no-underline">
+        <img src={c2} alt="c2" className="carousel-image" />
+      </a>
       <h2 className="carousel-date">JUN 19, 2023</h2>
-      <h1 className="carousel-text">The State of the Industry</h1>
+      <a href="https://someation.medium.com/the-state-of-the-industry-6068e3d226b7" class="no-underline">
+        <h1 className="carousel-text">The State of the Industry</h1>
+      </a>
       <h2 className="carousel-caption">
         Unpack the current state of the music industry with us, as we shine a spotlight on the challenges artists and audiences face today...
       </h2>
     </div>,
     <div className="carousel-item">
-      <img src={c4} alt="c4" className="carousel-image" />
+      <a href="https://someation.medium.com/behind-the-scenes-73a75e3a2717" class="no-underline">
+        <img src={c4} alt="c4" className="carousel-image" />
+      </a>
       <h2 className="carousel-date">JUN 19, 2023</h2>
-      <h1 className="carousel-text">Behind the Scenes</h1>
+      <a href="https://someation.medium.com/behind-the-scenes-73a75e3a2717" class="no-underline">
+       <h1 className="carousel-text">Behind the Scenes</h1>
+      </a>
       <h2 className="carousel-caption">
         Step backstage for an in-depth tour of the Some·Stage experience. Learn what our platform has in store for audiences and the exciting new experiences that await you.
       </h2>
@@ -123,7 +135,6 @@ const ContentBox = () => {
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2 },
     { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 4 },
   ];
 
   const duplicatedItems = [...items, ...items, ...items];
