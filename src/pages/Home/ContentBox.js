@@ -88,7 +88,7 @@ const ContentBox = () => {
 
 
 
-
+//Blog section 
 
   const items = [
     // Replace with your individual carousel items
@@ -128,6 +128,8 @@ const ContentBox = () => {
 
   const duplicatedItems = [...items, ...items, ...items];
 
+  // Mission section 
+
   return (
     <Container elevation={3}>
     {/*
@@ -166,8 +168,6 @@ const ContentBox = () => {
 
 
 
-
-
       <div className="section3"> 
       
       <h1 className="section3im1">TOUR WITH US</h1>
@@ -189,12 +189,14 @@ const ContentBox = () => {
       }} />
         <img src={Vector8} alt="rightvector" className="rightvector" style={{
       }} />
-      
+
       <div className="container2">
       <img src={Frame} alt="Frame" className="Frame" style={{
       }} />
       <h1 className="stageplan2">Backstage Access</h1>
+
       </div>
+      
 
 
 
@@ -263,6 +265,10 @@ const ContentBox = () => {
     <img src={seper} alt="seper" className="seperator1" style={{
       }} />
 
+
+
+
+  // Blog section 
     <div className="Section3">
 
       
@@ -331,9 +337,9 @@ const ContentBox = () => {
     </h2>
 
     <a href='https://discord.com/invite/QCjqu3KppW'>
-    <button className="join-button">
-      Head Backstage
-    </button>
+      <button className="join-button">
+        Head  {'\n'} Backstage
+      </button>
     </a>
  
     </div>
