@@ -2,16 +2,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px;
+    padding: 32px;
     border: none;
     margin-bottom: -1%;
   
 
   }
 
- 
- 
-  
+
   .nav-left {
     display: flex;
     align-items: center;
