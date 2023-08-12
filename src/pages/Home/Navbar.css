@@ -63,7 +63,8 @@ nav {
     font-family: Gochi Hand;
     border-radius: 10px;
     font-size: 2vw;
-    padding: 6px 14px; 
+    padding: 4px 16px;
+    line-height: 80%; 
     border: none; 
     cursor: pointer;
 

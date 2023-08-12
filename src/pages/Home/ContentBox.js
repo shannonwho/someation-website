@@ -13,11 +13,14 @@ import sec3im1 from './section3im1.png'
 import roadmap from './roadmap.png'
 import moneyicon from './moneyicon.png'
 import Frame from './Frame.png'
+import Framewx from './framewithx.png'
 import Carousal from "@itseasy21/react-elastic-carousel";
 import c1 from './carouselim1.png'
 import c2 from './carouselim2.png'
-import c3 from './carouselim3.jpeg'
+import c4 from './carouselim4.png'
+
 import Frame1 from './Frame1.png'
+import framex from './framex.png'
 import moneyicon2 from './moneyicon2.png'
 import Frame2 from './Frame2.png'
 import Vector8 from './Vector8.png'
@@ -32,7 +35,7 @@ const Container = styled(Paper)(({ theme }) => ({
     backgroundColor: 'black',
     borderRadius:  '30px',
     paddingTop: '10px',
-    margin: '25px'
+    margin: '10px'
 
 }));
  /*
@@ -82,13 +85,49 @@ const ContentBox = () => {
   const handleIconButtonClick5 = () => {
     setShowMessage4(true);
   };
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+  const items = [
+    // Replace with your individual carousel items
+    <div className="carousel-item">
+      <img src={c1} alt="c1" className="carousel-image" />
+      <h2 className="carousel-date">JUN 19, 2023</h2>
+      <h1 className="carousel-text">Getting the Gang Together</h1>
+      <h2 className="carousel-caption">
+        Dive into the inspiring journey of the visionary behind Some·Stage, and discover how he plans to transform the music industry forever...
+      </h2>
+    </div>,
+    <div className="carousel-item">
+      <img src={c2} alt="c2" className="carousel-image" />
+      <h2 className="carousel-date">JUN 19, 2023</h2>
+      <h1 className="carousel-text">The State of the Industry</h1>
+      <h2 className="carousel-caption">
+        Unpack the current state of the music industry with us, as we shine a spotlight on the challenges artists and audiences face today...
+      </h2>
+    </div>,
+    <div className="carousel-item">
+      <img src={c4} alt="c4" className="carousel-image" />
+      <h2 className="carousel-date">JUN 19, 2023</h2>
+      <h1 className="carousel-text">Behind the Scenes</h1>
+      <h2 className="carousel-caption">
+        Step backstage for an in-depth tour of the Some·Stage experience. Learn what our platform has in store for audiences and the exciting new experiences that await you.
+      </h2>
+    </div>,
+    // Repeat your items here for circular effect
+  ];
+
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+  ];
+
+  const duplicatedItems = [...items, ...items, ...items];
+
   return (
     <Container elevation={3}>
     {/*
@@ -101,9 +140,9 @@ const ContentBox = () => {
     <img src={artists} alt="artists" className="artists" style={{
         margin: 'auto',
       }} />
-      <video autoPlay controls className="homeimg">
+      <video autoPlay loop className="homeimg">
         <source src={videoFile} type="video/mp4"  />
-     
+  
       </video>
 
       <div className="section2">
@@ -138,16 +177,14 @@ const ContentBox = () => {
       <img src={roadmap} alt="roadmap" className="roadmap" style={{
       }} />
       <h1 className="firststageplan">Tour Dates Announced</h1>
-      <IconButton variant="contained" onClick={handleIconButtonClick} className="addbutton">
-        <AddOutlinedIcon />
-      </IconButton>
+
 
       {/* Text to display when the button is clicked */}
-      {showMessage && (
+     
         <p className="firstpart">
           Brace yourselves, music lovers! some·stage is plugging in to shake up your concert experience. We're calling all fans to join the journey, take our survey, and help us fine-tune this rocking revolution. Your input will help us set the stage.
         </p>
-      )}
+      
       <img src={moneyicon} alt="moneyicon" className="moneyicon" style={{
       }} />
         <img src={Vector8} alt="rightvector" className="rightvector" style={{
@@ -162,15 +199,12 @@ const ContentBox = () => {
 
 
         <div className="stage2con">
-      <IconButton variant="contained" onClick={handleIconButtonClick2} className="addbutton2">
-        <AddOutlinedIcon />
-      </IconButton>
+ 
       {/* Text to display when the button is clicked */}
-      {showMessage1 && (
         <p className="secondpart">
           Fancy a sneak peek at the future of concerts? By banding together with us early, you'll get the inside scoop on prototypes and score exclusive perks. This isn't just about attending a concert—it's about crafting the show together.
         </p>
-      )}
+      
       </div>
       
       <img src={Vector9} alt="leftvector" className="leftvector" style={{
@@ -178,20 +212,17 @@ const ContentBox = () => {
 
 
     <div className="container3"> 
-    <img src={Frame1} alt="Frame1" className="Frame1" style={{
+    <img src={Framewx} alt="Framewx" className="Frame1" style={{
       }} />
       <h1 className="stageplan3">Sound Check</h1>
     </div>
     <div className="stage3con">
-      <IconButton variant="contained" onClick={handleIconButtonClick3} className="addbutton3">
-        <AddOutlinedIcon />
-      </IconButton>
       {/* Text to display when the button is clicked */}
-      {showMessage2 && (
+     
         <p className="thirdpart">
           By fall 2023, we're dropping a prototype that's going to be music to your ears. Our community members will get the all-access pass to artist performances and a behind-the-scenes look at the creation process. Artists, your stage is waiting!
         </p>
-      )}
+   
       </div>
       
       <img src={Vector8} alt="rightvector" className="rightvector" style={{
@@ -205,15 +236,11 @@ const ContentBox = () => {
       </div>
 
       <div className="stage4con">
-      <IconButton variant="contained" onClick={handleIconButtonClick4} className="addbutton4">
-        <AddOutlinedIcon />
-      </IconButton>
       {/* Text to display when the button is clicked */}
-      {showMessage3 && (
         <p className="fourthpart">
           Join early and reap the rewards. Think exclusive events, inviting perks, and first dibs on pre-sale tickets for our virtual concert. Together, let's tune up an immersive concert environment that hits all the right notes.
         </p>
-      )}
+    
       </div>
       <img src={Vector9} alt="leftvector" className="leftvector" style={{
       }} />
@@ -224,15 +251,11 @@ const ContentBox = () => {
       <h1 className="stageplan5">Setlist Selection</h1>
     </div>
     <div className="stage5con">
-      <IconButton variant="contained" onClick={handleIconButtonClick5} className="addbutton3">
-        <AddOutlinedIcon />
-      </IconButton>
       {/* Text to display when the button is clicked */}
-      {showMessage4 && (
-        <p className="thirdpart">
+        <p className="fifthpart">
           We're dialing in the talent you love! As we sign on big-name artists, you'll be front-row for the announcements. Because at Some·Stage, you're not just part of the crowd, control of the concert is in your hands!
         </p>
-      )}
+      
       </div>
     </div>
 
@@ -243,7 +266,7 @@ const ContentBox = () => {
     <div className="Section3">
 
       
-      <h1 className="readmore">CREATE BIGGER CATALOG 
+      <h1 className="readmore">CRATE DIGGER CATALOG 
       <br />(the deep cuts)
       <div className="icon-con">
       <FaMusic className="music3" />
@@ -265,32 +288,21 @@ const ContentBox = () => {
      
 
       <div className="carousel-container">
-      <Carousal itemsToShow={2} pagination={false}>
-        <div className="carousel-item">
-          <img src={c1} alt="c1" className="carousel-image" />
-          <h2 className="carousel-date">JUN 19, 2023</h2>
-          <h1 className="carousel-text">Getting the Gang Together</h1>
-          <h2 className="carousel-caption">
-          Dive into the inspiring journey of the visionary behind Some·Stage, and discover how he plans to transform the music industry forever...
-          </h2>
-        </div>
-        <div className="carousel-item">
-          <img src={c2} alt="c2" className="carousel-image" />
-          <h2 className="carousel-date">JUN 19, 2023</h2>
-          <h1 className="carousel-text">The State of the Industry</h1>
-          <h2 className="carousel-caption">
-          Unpack the current state of the music industry with us, as we shine a spotlight on the challenges artists and audiences face today...
-          </h2>
-        </div>
+      <Carousal
+      breakPoints={breakPoints}
+      isRTL={false}
 
-      
-        <div className="carousel-item">
-          <img src={c3} alt="c3" className="carousel-image" />
-          <h2 className="carousel-date">JUN 19, 2023</h2>
-          <h1 className="carousel-text">Behind the Scenes</h1>
-          <h2 className="carousel-caption">Step backstage for an in-depth tour of the Some·Stage experience. Learn what our platform has in store for audiences and the exciting new experiences that await you.</h2>
+      autoPlaySpeed={3000}
+      pagination={false}
+    
+    >
+      {duplicatedItems.map((item, index) => (
+        <div key={index} className="carousel-item">
+          {item}
         </div>
-        
+      ))}
+   
+ 
 
       </Carousal>
     </div>
@@ -342,18 +354,6 @@ const ContentBox = () => {
       <img src={layer_1} alt="layer_1" className="layer1" />
    
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
     </Container>
 

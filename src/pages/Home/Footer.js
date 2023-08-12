@@ -9,7 +9,7 @@ const Footer = () => {
     return (
       <div className="containerf">
                 <u1 className="footer-menu">
-                <li>Home</li>
+                <li style={{ listStyle: 'none'}}>Home</li>
                 <li>About</li>
                 <li>Roadmap</li>
                 <li>Blog</li>
@@ -18,7 +18,7 @@ const Footer = () => {
         <img src={logo1} alt="logo1" className="logo1"/>
         </div>
       <div className="footer-last">
-        <a href='https://youtube.com/somestage'>
+        <a href='https://youtube.com/@somestage'>
         <img src={yt1} alt="yt1" className="yt1" /> </a>
         <a href='https://instagram.com/some.stage'>
         <img src={ig1} alt="ig1" className="ig1" /> </a>

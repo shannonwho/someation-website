@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <nav>
             <u1 className="nav-left">
-                <li><Link to="/" style={{ textDecoration: 'none', color: 'white' }} >Home</Link></li>
+                <li style={{ listStyle: 'none' }}><Link to="/" style={{ textDecoration: 'none', color: 'white' }} >Home</Link></li>
                 { /* <li><Link to="/about" style={{ textDecoration: 'none', color: 'white' }} >About</Link></li>
                 */ }
                 <li>About</li>
@@ -24,7 +24,8 @@ const Navbar = () => {
         </div>
         <div className="nav-right">
         <a href='https://discord.com/invite/QCjqu3KppW'>
-            <button>Head Backstage!</button> </a>
+            <button>Head 
+                <br />Backstage!</button> </a>
                 </div>
         </nav>
     );
