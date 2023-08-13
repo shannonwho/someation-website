@@ -153,7 +153,7 @@ const ContentBox = () => {
     <img src={artists} alt="artists" className="artists" style={{
         margin: 'auto',
       }} />
-      <video autoPlay loop muted className="homeimg">
+      <video autoPlay loop muted playsinline preload="auto" className="homeimg">
         <source src={videoFile} type="video/mp4"  />
   
       </video>
