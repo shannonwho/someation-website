@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import "./Navbar.css";
-import logo from './navlogo.png'
+import logo from './navbarLogoNew.png'
 import { Router, Link, Route } from 'wouter';
 
 const Navbar = () => {

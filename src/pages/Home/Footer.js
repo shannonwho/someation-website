@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Footer.css";
-import logo1 from './logo1.png'
+import logo1 from './navbarLogoNew.png'
 import ig1 from './ig1.png';
 import yt1 from './yt1.png';
 import tw1 from './tw1.png'; 
