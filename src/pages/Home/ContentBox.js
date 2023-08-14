@@ -158,7 +158,7 @@ const ContentBox = () => {
   
       </video>
 
-      <div className="section2">
+      <div id="about" className="section2">
       
       <div className="buttonholder"> 
       <h1 className="buttonlabel">Our Mission</h1>
@@ -179,7 +179,7 @@ const ContentBox = () => {
 
 
 
-      <div className="section3"> 
+      <div id="roadmap" className="section3"> 
       
       <h1 className="section3im1">TOUR WITH US</h1>
     
@@ -280,7 +280,7 @@ const ContentBox = () => {
 
 
   // Blog section 
-    <div className="Section3">
+    <div id="blog" className="Section3">
 
       
       <h1 className="readmore">CRATE DIGGER CATALOG 

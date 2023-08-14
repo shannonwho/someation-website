@@ -5,7 +5,7 @@ nav {
     padding: 12px;
     border: none;
     margin-bottom: 0%;
-  
+    flex-wrap: wrap;
 
   }
 
@@ -20,31 +20,77 @@ nav {
 
 
   .nav-left li {
-    margin-right: 10px; /* Adjust the spacing between the tabs */
+    margin-right: 32px; /* Adjust the spacing between the tabs */
     color: white; /* Set the text color of the tabs to white */
     font-family: Gochi Hand;
     font-size: 2vw;
     font-weight: 400;
+    list-style-type:none;
+
   }
   
   .nav-middle {
-    flex: 1; /* Take up remaining space in the middle */
+    width: auto;.nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px;
+      border: none;
+      margin-bottom: 0%;
+  }
+  
+  .nav-left {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      text-align: left;
+  }
+  
+  .nav-middle {
+      width: auto; 
+      flex: none; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0;
+      text-align: center;
+      font-size: 2vw;
+      color: white;
+      font-family: 'Jost', sans-serif;
+      font-weight: 900;
+      text-shadow: 
+      -0.2vw -0.2vw 0 rgb(0, 0, 0),
+      0.2vw -0.2vw 0 rgb(0, 0, 0),
+      -0.2vw 0.2vw 0 black,
+      0.2vw 0.2vw 0 black;
+  }
+  
+  .logo {
+      width: 10%;
+  }
+  
+  .nav-right {
+      flex: 1;
+      text-align: right;
+  }
+  
+    flex: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -15vw;
+    margin-left: 0;
     text-align: center;
     font-size: 2vw;
-    color: white; /* Set the text color of "Some Stage" to white */
+    color: white;
     font-family: 'Jost', sans-serif;
     font-weight: 900;
     text-shadow: 
-    -0.2vw -0.2vw 0 rgb(0, 0, 0), /* Top left (convert 1px to vw) */
-    0.2vw -0.2vw 0 rgb(0, 0, 0),  /* Top right (convert 1px to vw) */
-    -0.2vw 0.2vw 0 black,  /* Bottom left (convert 1px to vw) */
+    -0.2vw -0.2vw 0 rgb(0, 0, 0),
+    0.2vw -0.2vw 0 rgb(0, 0, 0),
+    -0.2vw 0.2vw 0 black,
     0.2vw 0.2vw 0 black;
+}
 
-  }
 
   .logo {
     width: 10%;
@@ -52,6 +98,7 @@ nav {
   
   .nav-right {
     text-align: right;
+    flex: 1
   
   }
   
@@ -68,4 +115,12 @@ nav {
 
 
   }
-  
+  /* Media query for smaller screens */
+@media (max-width: 768px) {
+  .nav-left li {
+      font-size: 1.5vw; /* reduce the font size */
+      margin-right: 5px; /* reduce spacing between items */
+  }
+  .logo {
+      width: 20%; /* adjust logo size for smaller screens */
+  }}
