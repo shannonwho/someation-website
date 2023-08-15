@@ -1,12 +1,14 @@
 @font-face {
-  font-family: 'Wooper'; /* Name the font whatever you like */
-  src: url('Wooper.ttf') format('truetype'); /* Replace 'path/to/your/font-file.ttf' with the actual path to your .ttf file */
+  font-family: 'Wooper';
+  /* Name the font whatever you like */
+  src: url('Wooper.ttf') format('truetype');
+  /* Replace 'path/to/your/font-file.ttf' with the actual path to your .ttf file */
   /* You can also include additional font formats (e.g., woff, woff2) for better browser support */
 }
 
 
 .container {
-    /* width: 95%;
+  /* width: 95%;
     margin: auto;
     margin-top: 16px; 
     padding: 12px; 
@@ -14,125 +16,130 @@
     color: rgb(29, 5, 5);
     background-color: navy;
     */
-    width: 1400px;
-    height: 1238px;
-    flex-shrink: 0;
-    padding: 50px;
+  width: 1400px;
+  height: 1238px;
+  flex-shrink: 0;
+  padding: 50px;
 
 
-  }
+}
 
-  .artists {
-    align-items: center;
-    width: 100%;
-  }
+.artists {
+  align-items: center;
+  width: 100%;
+}
 
 
 .title {
-    color: #FFF;
-    text-align: center;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 550%;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 110%;
-  }
+  color: #FFF;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 550%;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 110%;
+}
 
 
-  .title1 {
-    background: linear-gradient(90deg, #A968E7 0%, #FD479A 100%);
-    background-clip: text;
-    text-align: center;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 550%;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 110%;
-  }
-
-  
-  .homeimg {
-    display: flex;
-    width: 2280px;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 32px;
-    max-width: calc(100% - 30px);
-    margin: auto;
-  }
-
-  .section2 {
-    align-items: center;
-    margin-top: -15%;
-  }
+.title1 {
+  background: linear-gradient(90deg, #A968E7 0%, #FD479A 100%);
+  background-clip: text;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 550%;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 110%;
+}
 
 
-  .img2 {
+.homeimg {
+  display: flex;
+  width: 2280px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 32px;
+  max-width: calc(100% - 30px);
+  margin: auto;
+}
 
-    margin-top: -40%;
-    margin-left: 60%;
-    width: 35%;
-    height: auto;
-    max-width: calc(100% - 30px);
+.section2 {
+  align-items: center;
+  margin-top: -15%;
+}
 
 
-  }
-  
+.img2 {
+
+  margin-top: -40%;
+  margin-left: 60%;
+  width: 35%;
+  height: auto;
+  max-width: calc(100% - 30px);
+
+
+}
+
+.title3 {
+  width: 100%;
+  color: #FFF;
+  font-family: Wooper;
+  font-size: 5vw;
+  /* Adjust the value based on your preference */
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  align-items: left;
+  text-align: center;
+  line-height: 0.5;
+  /* Adjust the line-height based on your preference */
+  margin-left: 4%;
+  margin-top: 5vw;
+}
+
+@media screen and (max-width: 400px) {
   .title3 {
-    width: 100%;
-    color: #FFF;
-    font-family: Wooper;
-    font-size: 5vw; /* Adjust the value based on your preference */
-    font-style: normal;
-    font-weight: 400;
-    display: flex;
-    align-items: left;
-    text-align: center;
-    line-height: 0.5; /* Adjust the line-height based on your preference */
-    margin-left: 4%; 
-    margin-top: 5vw;
+    font-size: 2vw;
+    /* Reduce the font size for smaller screens */
+    line-height: 20px;
+    /* You can adjust this value to control the line height */
   }
+}
 
-  @media screen and (max-width: 400px) {
-    .title3 {
-      font-size: 2vw; /* Reduce the font size for smaller screens */
-      line-height: 20px; /* You can adjust this value to control the line height */
-    }
-  }
-  
 
 .titlecontain {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
 
 }
 
 .buttonholder {
-    margin-left: 10%;
-    margin-top: 25%;
-    display: inline-flex;
-    padding: 0.1vw 2.5vw;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    background: linear-gradient(90deg, #FCEE62 0%, #EA3CF1 100%);
+  margin-left: 10%;
+  margin-top: 25%;
+  display: inline-flex;
+  padding: 0.1vw 2.5vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #FCEE62 0%, #EA3CF1 100%);
 }
 
 .buttonlabel {
-    color: #000;
-    font-family: 'Gochi Hand', cursive;
-    text-shadow: 0px 1vw 1vw rgba(76, 71, 71, 0.671) !important;
-    font-size: 2.5vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 70%; /* 120% */
+  color: #000;
+  font-family: 'Gochi Hand', cursive;
+  text-shadow: 0px 1vw 1vw rgba(76, 71, 71, 0.671) !important;
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70%;
+  /* 120% */
 }
 
 .some-stage-helps {
@@ -157,7 +164,7 @@
 }
 
 .section3im1 {
-  
+
   font-family: Wooper;
   color: #FFF;
   font-size: 5vw;
@@ -168,7 +175,7 @@
   width: 60%;
   height: auto;
   max-width: calc(100% - 30px);
-  
+
 }
 
 .roadmap {
@@ -189,8 +196,8 @@
 .addbutton {
   color: #FFF !important;
   width: 29%;
-  
-  
+
+
 }
 
 .firststageplan {
@@ -199,7 +206,8 @@
   font-size: 3vw;
   font-style: normal;
   font-weight: 40;
-  line-height: 7%; /* 125% */
+  line-height: 7%;
+  /* 125% */
   margin-left: 4%;
 }
 
@@ -209,8 +217,9 @@
   font-size: 1.5vw;
   font-style: normal;
   font-weight: 600;
-  line-height: 2vw; /* 140% */
-  width: 45vw; 
+  line-height: 2vw;
+  /* 140% */
+  width: 45vw;
   margin-left: 4%;
   margin-top: 1%;
   margin-bottom: -10%;
@@ -221,7 +230,7 @@
   margin-top: -6%;
   width: 25%;
   height: auto;
- 
+
 
 }
 
@@ -237,15 +246,15 @@
   display: flex;
   align-items: center;
   margin-top: -1vw;
-  
+
 }
 
 .Frame {
   margin-left: 9%;
   height: 15%;
-  width: 9%; 
+  width: 9%;
   margin-bottom: 10%;
-  max-height: calc(100% - 80px) ;
+  max-height: calc(100% - 80px);
 }
 
 .stageplan2 {
@@ -270,16 +279,18 @@
   font-size: 1.5vw;
   font-style: normal;
   font-weight: 600;
-  line-height: 2vw; /* 140% */
-  width: 45vw; 
+  line-height: 2vw;
+  /* 140% */
+  width: 45vw;
   margin-left: -30vw;
   margin-top: 1%;
 
 }
+
 .stage2con {
   margin-top: -27%;
   margin-left: 80%;
-  
+
 }
 
 .leftvector {
@@ -299,10 +310,10 @@
 .Frame1 {
   margin-left: 75%;
   height: 30%;
-  width: 20%; 
+  width: 20%;
   max-height: calc(100% - 80px);
   margin-top: -4%;
-  
+
 }
 
 
@@ -312,10 +323,12 @@
   font-size: 3vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 7%; /* 125% */
+  line-height: 7%;
+  /* 125% */
   margin-left: -80%;
   margin-top: -5vw;
 }
+
 .stage3con {
   margin-top: -12%;
 }
@@ -324,21 +337,23 @@
   color: #FFF !important;
   width: 25%;
 }
+
 .thirdpart {
   color: #A1A1A1;
   font-family: Be Vietnam Pro;
   font-size: 1.5vw;
   font-style: normal;
   font-weight: 600;
-  line-height: 2vw; /* 140% */
-  width: 45vw; 
+  line-height: 2vw;
+  /* 140% */
+  width: 45vw;
   margin-left: 4%;
   margin-top: -14%;
 }
 
 .moneyicon2 {
   width: 20vw;
-  transform: rotate(20deg); 
+  transform: rotate(20deg);
 }
 
 .stageplan4 {
@@ -353,7 +368,7 @@
 }
 
 .stage4con {
- 
+
   margin-top: -4%;
   margin-left: 80%;
 }
@@ -366,14 +381,16 @@
 .stage5con {
   margin-top: -15%;
 }
+
 .fourthpart {
   color: #A1A1A1;
   font-family: Be Vietnam Pro;
   font-size: 1.5vw;
   font-style: normal;
   font-weight: 600;
-  line-height: 2vw; /* 140% */
-  width: 45vw; 
+  line-height: 2vw;
+  /* 140% */
+  width: 45vw;
   margin-left: -35vw;
   margin-top: 25%;
 }
@@ -384,8 +401,9 @@
   font-size: 1.5vw;
   font-style: normal;
   font-weight: 600;
-  line-height: 2vw; /* 140% */
-  width: 45vw; 
+  line-height: 2vw;
+  /* 140% */
+  width: 45vw;
   margin-left: 4%;
   margin-top: 8%;
 }
@@ -396,7 +414,8 @@
   font-size: 3vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 7%; /* 125% */
+  line-height: 7%;
+  /* 125% */
   margin-left: -75%;
   margin-top: 1vw;
 }
@@ -405,8 +424,8 @@
 .Frame2 {
   margin-left: 80%;
   height: 15%;
-  width: 9%; 
-  max-height: calc(100% - 80px) ;
+  width: 9%;
+  max-height: calc(100% - 80px);
   margin-top: -5%;
 }
 
@@ -414,22 +433,24 @@
   color: #E2DFDF;
   text-align: center;
   font-family: Wooper;
-  font-size: 5vw;;
+  font-size: 5vw;
+  ;
   font-weight: 400;
-  line-height: 125%; /* 125% */
-  
-  
-  }
+  line-height: 125%;
+  /* 125% */
 
-  .seperator1 {
-    margin-top: 5%;
-    width: 98%;
-    height: auto;
-    max-width: calc(100% - 30px);
-  
-  }
 
-  /* carousel.css */
+}
+
+.seperator1 {
+  margin-top: 5%;
+  width: 98%;
+  height: auto;
+  max-width: calc(100% - 30px);
+
+}
+
+/* carousel.css */
 
 /* Style for the carousel container */
 .carousel-container {
@@ -444,6 +465,40 @@
   position: relative;
   margin: 10px;
   margin-top: 1vw;
+}
+
+.carousel-item2 .carousel-item {
+  margin: 10px 30px !important;
+}
+
+.slick-next {
+  background: transparent !important;
+}
+
+.slick-next:before {
+  content: '' !important;
+  display: block;
+  margin: 30px auto;
+  width: 15px;
+  height: 15px;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+  rotate: 134deg;
+}
+
+.slick-prev {
+  background: transparent !important;
+}
+
+.slick-prev:before {
+  content: '' !important;
+  display: block;
+  margin: 30px auto;
+  width: 15px;
+  height: 15px;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+  rotate: -45deg;
 }
 
 /* Style for the black rectangle frame */
@@ -462,7 +517,7 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   transform: translateX(-50%);
   background-color: rgb(189, 170, 0);
-  */ 
+  */
   color: white;
   font-family: Be Vietnam Pro;
   font-weight: 500;
@@ -472,8 +527,9 @@
   text-align: justify;
   margin: 0 auto;
 }
+
 .carousel-text {
-  color:white; 
+  color: white;
   font-size: 3vw;
   font-family: Gochi Hand;
   font-weight: 400;
@@ -485,7 +541,8 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 160% */
+  line-height: 24px;
+  /* 160% */
 }
 
 
@@ -495,38 +552,43 @@
   align-items: center;
   margin-top: -30%;
 }
+
 .mission {
   color: #E2DFDF;
   text-align: center;
   font-family: Wooper;
   font-size: 6vw;
   font-weight: 400;
-  line-height: 3vw; /* 125% */
+  line-height: 3vw;
+  /* 125% */
   margin-top: 8vw;
 }
 
 .mission-sub {
-color: #A1A1A1;
-text-align: center;
-font-family: Be Vietnam Pro;
-font-size: 2vw;
-justify-content: center;
-font-style: normal;
-font-weight: 600;
-line-height: 140%; 
-padding: 1% 20%;
-margin-top: -2%;
+  color: #A1A1A1;
+  text-align: center;
+  font-family: Be Vietnam Pro;
+  font-size: 2vw;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  padding: 1% 20%;
+  margin-top: -2%;
 }
 
 @media screen and (max-width: 420px) {
   .mission-sub {
-    font-size: 0.3vw; /* Reduce the font size to 4vw on smaller screens */
-    line-height: 0.5; /* Adjust the line height for better spacing between lines */
+    font-size: 0.3vw;
+    /* Reduce the font size to 4vw on smaller screens */
+    line-height: 0.5;
+    /* Adjust the line height for better spacing between lines */
   }
 }
 
 .join-button {
-  margin-top: 1vw; /* Add some spacing between the text and the button */
+  margin-top: 1vw;
+  /* Add some spacing between the text and the button */
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   padding: 1vw 2vw;
@@ -536,15 +598,17 @@ margin-top: -2%;
   font-size: 2.5vw;
   font-weight: 600;
   cursor: pointer;
-  
+
 }
 
 
 .layer2 {
-  position: absolute; 
-  top: 60%; /* Adjust the vertical position as needed */
-  left: 50%; /* Adjust the horizontal position as needed */
-  transform: translate(-50%, -50%); 
+  position: absolute;
+  top: 60%;
+  /* Adjust the vertical position as needed */
+  left: 50%;
+  /* Adjust the horizontal position as needed */
+  transform: translate(-50%, -50%);
   width: 45%;
 }
 
@@ -553,14 +617,19 @@ margin-top: -2%;
   width: 100%;
   height: auto;
   border-radius: 30px;
-  
+
 }
+
 .page-end {
-  position: relative; /* Make the container a reference for positioning the top image */
+  position: relative;
+  /* Make the container a reference for positioning the top image */
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  width: 100%; /* Adjust the width as needed */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  width: 100%;
+  /* Adjust the width as needed */
   height: 100%;
 }
 
@@ -588,7 +657,7 @@ margin-top: -2%;
   margin-bottom: 8%;
   width: 3%;
   height: 3%;
-  
+
   color: #FD479A;
 }
 
@@ -607,7 +676,7 @@ margin-top: -2%;
   margin-left: 10%;
   margin-bottom: 13%;
   margin-top: -60%;
-  
+
 }
 
 .circle3 {
@@ -615,9 +684,9 @@ margin-top: -2%;
   height: 5%;
   color: #A968E7;
   margin-left: 60%;
-  margin-top: -40%; 
+  margin-top: -40%;
   margin-bottom: 20%;
-  
+
 }
 
 .icon-container {
@@ -636,18 +705,21 @@ margin-top: -2%;
   margin-top: 8%;
   width: 3vw;
   height: auto;
-  
+
 }
 
 .music4 {
- color: #ff4e9ecc;
+  color: #ff4e9ecc;
   margin-bottom: 20%;
- 
+
   width: 5vw;
   height: 3vw;
-  position: absolute; /* Use absolute positioning for the icon */
-  right: 20%; /* Position the icon to the right edge */
-  top: 60%; /* Position the icon vertically in the middle */
+  position: absolute;
+  /* Use absolute positioning for the icon */
+  right: 20%;
+  /* Position the icon to the right edge */
+  top: 60%;
+  /* Position the icon vertically in the middle */
   left: 80%;
 }
 
@@ -655,7 +727,7 @@ margin-top: -2%;
   color: rgba(103, 250, 250, 0.938);
   width: 6%;
   height: 5%;
-  
+
   margin-left: 29%;
   margin-top: 2%;
   position: relative;
@@ -666,11 +738,12 @@ margin-top: -2%;
   width: 7%;
   height: 10%;
 }
+
 .FaCircle3 {
   color: rgba(147, 103, 250, 0.938);
   width: 3%;
   height: 5%;
-  
+
   margin-left: -15%;
   margin-top: -20%;
   position: relative;
@@ -717,6 +790,7 @@ c1 {
   width: 3vw;
   height: auto;
 }
+
 .m2 {
   color: #62fc88;
   margin-left: 4%;
