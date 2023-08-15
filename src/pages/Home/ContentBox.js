@@ -25,7 +25,7 @@ import moneyicon2 from './moneyicon2.png'
 import Frame2 from './Frame2.png'
 import Vector8 from './Vector8.png'
 import Vector9 from './Vector9.png'
-import videoFile from './ss-official.mp4'
+import videoFile from './ss-full.mov'
 import Button from '@mui/material/Button';
 import "./ContentBox.css"; 
 import { FaCircle, FaStar, FaMusic } from 'react-icons/fa';
