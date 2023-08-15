@@ -41,18 +41,36 @@
 }
 
 
-.title1 {
-  background: linear-gradient(90deg, #A968E7 0%, #FD479A 100%);
-  background-clip: text;
-  text-align: center;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 550%;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 110%;
-}
+  .title1 {
+    background: linear-gradient(90deg, #A968E7 0%, #FD479A 100%);
+    background-clip: text;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 550%;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%;
+  }
+
+  
+  .homeimg {
+    display: flex;
+    width: 2280px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 32px;
+    max-width: calc(100% - 30px);
+    margin: auto;
+  }
+
+  .section2 {
+    align-items: center;
+    margin-top: 100px;
+  }
 
 
 .homeimg {
@@ -119,27 +137,32 @@
   margin-top: 50px;
 
 }
-
+.sec2MainContainer {
+  display: flex;
+  justify-content: space-around;
+}
+  .btnhalfContainer {
+    width: 100%;
+    max-width: 640px;
+  }
 .buttonholder {
-  margin-left: 10%;
-  margin-top: 25%;
-  display: inline-flex;
-  padding: 0.1vw 2.5vw;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #FCEE62 0%, #EA3CF1 100%);
+    margin-left: 10%;
+    display: inline-flex;
+    padding: 0.1vw 2.5vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #FCEE62 0%, #EA3CF1 100%);
 }
 
 .buttonlabel {
-  color: #000;
-  font-family: 'Gochi Hand', cursive;
-  text-shadow: 0px 1vw 1vw rgba(76, 71, 71, 0.671) !important;
-  font-size: 2.5vw;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 70%;
-  /* 120% */
+    color: #000;
+    font-family: 'Gochi Hand', cursive;
+    text-shadow: 0px 1vw 1vw rgba(76, 71, 71, 0.671) !important;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70%; /* 120% */
 }
 
 .some-stage-helps {
@@ -150,88 +173,93 @@
   line-height: 2.2vw;
   align-items: left;
   top: 620px;
-  width: 50%;
   display: flex;
   margin-left: 4%;
 }
+.speatorMaindiv{
+  display: flex;
+  justify-content: center;
+}
 
 .seperator {
-  margin-top: -200px;
-  width: 98%;
+  margin-top: 100px;
+  width: 100%;
   height: auto;
-  max-width: calc(100% - 30px);
-
+  max-width: 1520px;
 }
-
+  .section3 {
+    margin: 0 auto;
+    margin-top: 132px;
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 20px;
+  }
+  .sec3Maindiv {
+    display: flex;
+    justify-content: space-between;
+  }
 .section3im1 {
-
+  margin: 0;
   font-family: Wooper;
   color: #FFF;
-  font-size: 5vw;
+  font-size: 80px;
   font-weight: 400;
-  margin-left: 30%;
-  text-align: right;
-  margin-top: 4%;
-  width: 60%;
-  height: auto;
-  max-width: calc(100% - 30px);
-
-}
-
-.roadmap {
-  margin-right: 70%;
-  margin-left: 10%;
-  margin-top: -10%;
-  width: 10%;
-  height: auto;
-  max-width: calc(100% - 60px);
-
 }
 
 #roadmap {
   font-family: 'Gochi Hand';
-
 }
-
+.tourMainDiv {
+  display: flex;
+  margin-left: 20px;
+}
+.tourWithData {
+  width: 100%;
+  max-width: 1384px;
+  margin: 0 auto;
+}
+.circlesvg {
+  margin-left: -40px;
+}
+.circleTourMain {
+  display: flex;
+  margin-top: -30px;
+}
 .addbutton {
   color: #FFF !important;
   width: 29%;
 
 
 }
-
+.tourDatesAnnounced {
+  width: 100%;
+  max-width: 652px;
+}
 .firststageplan {
   color: #FFF;
   font-family: Gochi Hand;
-  font-size: 3vw;
-  font-style: normal;
-  font-weight: 40;
-  line-height: 7%;
-  /* 125% */
-  margin-left: 4%;
+  font-size: 64px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .firstpart {
   color: #A1A1A1;
   font-family: Be Vietnam Pro;
-  font-size: 1.5vw;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 2vw;
-  /* 140% */
-  width: 45vw;
-  margin-left: 4%;
-  margin-top: 1%;
-  margin-bottom: -10%;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 500;
+  width: 100%;
+  margin: 0;
+  margin-top: 12px;
 }
 
 .moneyicon {
-  margin-left: 60%;
-  margin-top: -6%;
-  width: 25%;
+  width: 100%;
   height: auto;
-
-
+  max-width: 240px;
+  margin-left: 137px;
+  margin-top: -30px;
 }
 
 .rightvector {
@@ -244,53 +272,58 @@
 
 .container2 {
   display: flex;
-  align-items: center;
-  margin-top: -1vw;
-
+  margin-top: 18px;
+  justify-content: space-between;
 }
-
+  .circleContainer2svg {
+    margin-top: 55px;
+    margin-right: 12px;
+    position: relative;
+  }
 .Frame {
-  margin-left: 9%;
-  height: 15%;
-  width: 9%;
-  margin-bottom: 10%;
-  max-height: calc(100% - 80px);
+  margin-left: 151px;
 }
 
 .stageplan2 {
   color: #FFF;
   font-family: Gochi Hand;
-  font-size: 3vw;
-  font-style: normal;
   font-weight: 400;
-  margin-left: 45%;
-  margin-top: -28%;
-  width: 40vw;
+  font-size: 64px;
+  margin-bottom: 0;
 }
 
 .addbutton2 {
   color: #FFF !important;
   width: 5%;
 }
+.firstpartMain {
+  position: relative;
+}
+.firstPartsvg {
+  position: absolute;
+  top: 0;
+  left: -69px;
+}
+.firstPartsvg svg {
+  width: 1390px;
+}
 
 .secondpart {
   color: #A1A1A1;
   font-family: Be Vietnam Pro;
-  font-size: 1.5vw;
-  font-style: normal;
   font-weight: 600;
-  line-height: 2vw;
-  /* 140% */
-  width: 45vw;
-  margin-left: -30vw;
-  margin-top: 1%;
-
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-top: 12px;
+  margin-right: 11px;
 }
 
 .stage2con {
-  margin-top: -27%;
-  margin-left: 80%;
-
+  display: flex;
+}
+.textRight {
+  text-align: right;
 }
 
 .leftvector {
@@ -303,19 +336,19 @@
 
 .container3 {
   display: flex;
-  align-items: center;
-  margin-top: -10%;
 }
-
-.Frame1 {
-  margin-left: 75%;
-  height: 30%;
-  width: 20%;
-  max-height: calc(100% - 80px);
-  margin-top: -4%;
-
+.secondPartMain {
+  position: relative;
 }
-
+.secondPartSvg {
+  position: absolute;
+  top: 140px;
+  right: 53px;
+}
+.container3circleSvg {
+  margin-top: 58px;
+  margin-left: 16px;
+}
 
 .stageplan3 {
   color: #FFF;
@@ -802,4 +835,13 @@ c1 {
 
 .no-underline {
   text-decoration: none;
+}
+.marginforContainer {
+  margin: 10px;
+} 
+@media screen and (max-width: 640px) {
+  .marginforContainer {
+    margin: 0 !important;
+    margin-top: 4px !important;
+  }
 }
