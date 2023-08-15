@@ -153,9 +153,26 @@ const ContentBox = () => {
     <img src={artists} alt="artists" className="artists" style={{
         margin: 'auto',
       }} />
-      <video autoPlay loop muted="true" playsinline preload="auto" className="homeimg">
+
+    <div dangerouslySetInnerHTML={{ __html: `
+        <video
+          loop
+          muted
+          autoplay
+          playsinline
+          className="homeimg"
+        >
+        <source src="${videoFile}" type="video/mp4" />
+        </video>`
+      }}
+    />
+
+
+{/* 
+
+      <video loop={true} muted={true} autoplay={true} playsinline={true} className="homeimg">
         <source src={videoFile} type="video/mp4"  />
-      </video>
+      </video> */}
 
       <div id= "about" className="section2">
       
