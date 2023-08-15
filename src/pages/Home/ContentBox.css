@@ -67,13 +67,13 @@
 
   .section2 {
     align-items: center;
-    margin-top: -15%;
+    margin-top: -20%;
   }
 
 
   .img2 {
 
-    margin-top: -40%;
+    margin-top: -34%;
     margin-left: 60%;
     width: 35%;
     height: auto;
@@ -94,12 +94,16 @@
     text-align: center;
     line-height: 0.5; /* Adjust the line-height based on your preference */
     margin-left: 4%; 
-    margin-top: 5vw;
+    margin-top: 2vw;
   }
+
+  .section2 .title3 {
+    margin-top: 5vw;
+}
 
   @media screen and (max-width: 400px) {
     .title3 {
-      font-size: 2vw; /* Reduce the font size for smaller screens */
+      font-size: 5vw; /* Reduce the font size for smaller screens */
       line-height: 20px; /* You can adjust this value to control the line height */
     }
   }
@@ -512,7 +516,7 @@ font-family: Be Vietnam Pro;
 font-size: 2vw;
 justify-content: center;
 font-style: normal;
-font-weight: 600;
+font-weight: 500;
 line-height: 140%; 
 padding: 1% 20%;
 margin-top: -2%;
@@ -529,9 +533,9 @@ margin-top: -2%;
   margin-top: 1vw; /* Add some spacing between the text and the button */
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  padding: 1vw 2vw;
+  padding: 1vw 4vw;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-family: Gochi Hand;
   font-size: 2.5vw;
   font-weight: 600;
