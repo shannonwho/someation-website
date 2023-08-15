@@ -353,13 +353,13 @@ const ContentBox = () => {
     </a>
  
     </div>
-    <div className="icon-container"> 
-    <FaCircle className="FaCircle3" />
-    <FaMusic className='music5' />
-    <FaMusic className='music4' />
-    <FaStar className="star4" />
-    <FaCircle className="FaCircle1" />
-       </div> 
+    {/* <div className="icon-container"> 
+      <FaCircle className="FaCircle3" />
+      <FaMusic className='music5' />
+      <FaMusic className='music4' />
+      <FaStar className="star4" />
+      <FaCircle className="FaCircle1" />
+    </div>  */}
     
     
       <div className="page-end">
