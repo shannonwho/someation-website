@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from "./Navbar"; 
+import "./Home.css";
 import ContentBox from './ContentBox';
 import Footer from './Footer.js'
 

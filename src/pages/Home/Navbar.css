@@ -1,47 +1,44 @@
-nav {
+.mainNev {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px;
   border: none;
-  margin-bottom: -1%;
+  margin-bottom: 4px;
 }
-
 
 .nav-left {
   display: flex;
   align-items: center;
   text-align: left;
-  
 }
 
 .nav-left li {
   margin-right: 10px; /* Adjust the spacing between the tabs */
   color: white; /* Set the text color of the tabs to white */
   font-family: Gochi Hand;
-  font-size: 2vw;
+  font-size: 40px;
   font-weight: 400;
 }
 
 .nav-left li::after {
-  content: '';  /* This is the dot */
-  margin-right: 8px;  /* Adjust as needed */
-  margin-left: 8px;  /* Adjust as needed */
-  color: white;  /* Set the dot color */
+  content: ""; /* This is the dot */
+  margin-right: 8px; /* Adjust as needed */
+  margin-left: 8px; /* Adjust as needed */
+  color: white; /* Set the dot color */
 }
 
 .nav-left li:first-child::before {
-  content: '';  /* No dot before the first item */
+  content: ""; /* No dot before the first item */
 }
 
 .nav-left li:last-child::after {
-content: '';  /* No dot before the first item */
+  content: ""; /* No dot before the first item */
 }
 
 .nav-middle {
-  height: 120px;  /* Example height, adjust as needed */
+  height: 120px; /* Example height, adjust as needed */
   display: flex;
-  align-items: center;  /* To vertically center the logo */
+  align-items: center; /* To vertically center the logo */
   justify-content: center;
   flex: 1; /* Take up remaining space in the middle */
   display: flex;
@@ -51,24 +48,23 @@ content: '';  /* No dot before the first item */
   text-align: center;
   font-size: 2vw;
   color: white; /* Set the text color of "Some Stage" to white */
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 900;
-  text-shadow: 
-  -0.2vw -0.2vw 0 rgb(0, 0, 0), /* Top left (convert 1px to vw) */
-  0.2vw -0.2vw 0 rgb(0, 0, 0),  /* Top right (convert 1px to vw) */
-  -0.2vw 0.2vw 0 black,  /* Bottom left (convert 1px to vw) */
-  0.2vw 0.2vw 0 black;
-
+  text-shadow: -0.2vw -0.2vw 0 rgb(0, 0, 0),
+    /* Top left (convert 1px to vw) */ 0.2vw -0.2vw 0 rgb(0, 0, 0),
+    /* Top right (convert 1px to vw) */ -0.2vw 0.2vw 0 black,
+    /* Bottom left (convert 1px to vw) */ 0.2vw 0.2vw 0 black;
 }
 
 .logo {
-  width: 20%;
+  width: 94px;
+  height: 76px;
+  margin-left: 68px;
 }
 
 .nav-right {
   flex: 1;
   text-align: right;
-
 }
 
 button {
@@ -78,9 +74,52 @@ button {
   border-radius: 10px;
   font-size: 2vw;
   padding: 4px 16px;
-  line-height: 80%; 
-  border: none; 
+  line-height: 80%;
+  border: none;
   cursor: pointer;
-
-
+  margin-right: 163px;
+}
+.ytLogo {
+  width: 42px;
+  height: 32px;
+}
+.twLogo {
+  width: 28px;
+  height: 29px;
+  margin-left: 10px;
+}
+.igLogo {
+  width: 38px;
+  height: 27px;
+}
+.ytTwLogoMain {
+  display: flex;
+  justify-content: center;
+}
+.textAlign {
+  text-align: center;
+}
+.mainNev2 {
+  display: none;
+  align-items: center;
+}
+@media screen and (max-width: 640px) {
+  .mainNev {
+    display: none;
+  }
+  .mainNev2 {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    width: 69px;
+    height: 71px;
+    padding-left: 30px;
+  }
+  button {
+    font-size: 20px;
+    padding: 6px 12px;
+    margin-left: 39px;
+    margin-right: 0;
+  }
 }
