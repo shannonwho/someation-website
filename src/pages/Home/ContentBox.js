@@ -154,25 +154,10 @@ const ContentBox = () => {
         margin: 'auto',
       }} />
 
-    <div dangerouslySetInnerHTML={{ __html: `
-        <video
-          loop
-          muted
-          autoplay
-          playsinline
-          className="homeimg"
-        >
-        <source src="${videoFile}" type="video/mp4" />
-        </video>`
-      }}
-    />
 
-
-{/* 
-
-      <video loop={true} muted={true} autoplay={true} playsinline={true} className="homeimg">
+      <video autoPlay loop muted playsinline preload="auto" className="homeimg">
         <source src={videoFile} type="video/mp4"  />
-      </video> */}
+      </video>
 
       <div id= "about" className="section2">
       
