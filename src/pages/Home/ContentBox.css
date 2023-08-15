@@ -464,6 +464,8 @@
   font-size: 2vw;
   text-align: left;
   color: #A1A1A1;
+  text-align: justify;
+  margin: 0 auto;
 }
 .carousel-text {
   color:white; 
