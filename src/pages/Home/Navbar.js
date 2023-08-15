@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Navbar.css";
-import logo from './navbarLogoNew.png';
+import logo from './logo192.png';
 import { Router, Route } from 'wouter';
 
 function scrollToElement(id) {
@@ -22,9 +22,11 @@ const Navbar = () => {
             </u1>
             
             <div className="nav-middle">
+                <a href='/'>
                 <img src={logo} alt="logo" className="logo" style={{
                     margin: 'auto',
                 }} />
+                </a>
             </div>
             <div className="nav-right">
                 <a href='https://discord.com/invite/QCjqu3KppW'>

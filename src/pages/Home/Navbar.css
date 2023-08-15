@@ -1,126 +1,86 @@
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px;
-    border: none;
-    margin-bottom: 0%;
-    flex-wrap: wrap;
-
-  }
-
-
-  .nav-left {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    
-  }
-  
-
-
-  .nav-left li {
-    margin-right: 32px; /* Adjust the spacing between the tabs */
-    color: white; /* Set the text color of the tabs to white */
-    font-family: Gochi Hand;
-    font-size: 2vw;
-    font-weight: 400;
-    list-style-type:none;
-
-  }
-
-  .nav-middle {
-    width: auto;.nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px;
-      border: none;
-      margin-bottom: 0%;
-  }
-  
-  .nav-left {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      text-align: left;
-  }
-  
-  .nav-middle {
-      width: auto; 
-      flex: none; 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 0;
-      text-align: center;
-      font-size: 2vw;
-      color: white;
-      font-family: 'Jost', sans-serif;
-      font-weight: 900;
-      text-shadow: 
-      -0.2vw -0.2vw 0 rgb(0, 0, 0),
-      0.2vw -0.2vw 0 rgb(0, 0, 0),
-      -0.2vw 0.2vw 0 black,
-      0.2vw 0.2vw 0 black;
-  }
-  
-  .logo {
-      width: 10%;
-  }
-  
-  .nav-right {
-      flex: 1;
-      text-align: right;
-  }
-  
-    flex: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
-    text-align: center;
-    font-size: 2vw;
-    color: white;
-    font-family: 'Jost', sans-serif;
-    font-weight: 900;
-    text-shadow: 
-    -0.2vw -0.2vw 0 rgb(0, 0, 0),
-    0.2vw -0.2vw 0 rgb(0, 0, 0),
-    -0.2vw 0.2vw 0 black,
-    0.2vw 0.2vw 0 black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+  border: none;
+  margin-bottom: -1%;
 }
 
 
-  .logo {
-    width: 10%;
-  }
+.nav-left {
+  display: flex;
+  align-items: center;
+  text-align: left;
   
-  .nav-right {
-    text-align: right;
-    flex: 1
-  
-  }
-  
-  button {
-    background-color: white;
-    color: black;
-    font-family: Gochi Hand;
-    border-radius: 10px;
-    font-size: 2vw;
-    padding: 4px 16px;
-    line-height: 80%; 
-    border: none; 
-    cursor: pointer;
+}
+
+.nav-left li {
+  margin-right: 10px; /* Adjust the spacing between the tabs */
+  color: white; /* Set the text color of the tabs to white */
+  font-family: Gochi Hand;
+  font-size: 2vw;
+  font-weight: 400;
+}
+
+.nav-left li::after {
+  content: '';  /* This is the dot */
+  margin-right: 8px;  /* Adjust as needed */
+  margin-left: 8px;  /* Adjust as needed */
+  color: white;  /* Set the dot color */
+}
+
+.nav-left li:first-child::before {
+  content: '';  /* No dot before the first item */
+}
+
+.nav-left li:last-child::after {
+content: '';  /* No dot before the first item */
+}
+
+.nav-middle {
+  height: 120px;  /* Example height, adjust as needed */
+  display: flex;
+  align-items: center;  /* To vertically center the logo */
+  justify-content: center;
+  flex: 1; /* Take up remaining space in the middle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  text-align: center;
+  font-size: 2vw;
+  color: white; /* Set the text color of "Some Stage" to white */
+  font-family: 'Jost', sans-serif;
+  font-weight: 900;
+  text-shadow: 
+  -0.2vw -0.2vw 0 rgb(0, 0, 0), /* Top left (convert 1px to vw) */
+  0.2vw -0.2vw 0 rgb(0, 0, 0),  /* Top right (convert 1px to vw) */
+  -0.2vw 0.2vw 0 black,  /* Bottom left (convert 1px to vw) */
+  0.2vw 0.2vw 0 black;
+
+}
+
+.logo {
+  width: 20%;
+}
+
+.nav-right {
+  flex: 1;
+  text-align: right;
+
+}
+
+button {
+  background-color: white;
+  color: black;
+  font-family: Gochi Hand;
+  border-radius: 10px;
+  font-size: 2vw;
+  padding: 4px 16px;
+  line-height: 80%; 
+  border: none; 
+  cursor: pointer;
 
 
-  }
-  /* Media query for smaller screens */
-@media (max-width: 768px) {
-  .nav-left li {
-      font-size: 1.5vw; /* reduce the font size */
-      margin-right: 5px; /* reduce spacing between items */
-  }
-  .logo {
-      width: 20%; /* adjust logo size for smaller screens */
-  }}
+}

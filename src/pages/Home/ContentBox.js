@@ -25,7 +25,7 @@ import moneyicon2 from './moneyicon2.png'
 import Frame2 from './Frame2.png'
 import Vector8 from './Vector8.png'
 import Vector9 from './Vector9.png'
-import videoFile from './somestagevid.mp4'
+import videoFile from './ss-official.mp4'
 import Button from '@mui/material/Button';
 import "./ContentBox.css"; 
 import { FaCircle, FaStar, FaMusic } from 'react-icons/fa';
@@ -96,7 +96,7 @@ const ContentBox = () => {
       <a href="https://someation.medium.com/getting-the-gang-together-1f74ace10b3a" class="no-underline">
         <img src={c1} alt="c1" className="carousel-image" />
       </a>
-      <h2 className="carousel-date">JUN 19, 2023</h2>
+      {/* <h2 className="carousel-date">JUN 19, 2023</h2> */}
       <a href="https://someation.medium.com/getting-the-gang-together-1f74ace10b3a" class="no-underline">
        <h1 className="carousel-text">Getting the Gang Together</h1>
       </a>
@@ -108,7 +108,7 @@ const ContentBox = () => {
       <a href="https://someation.medium.com/the-state-of-the-industry-6068e3d226b7" class="no-underline">
         <img src={c2} alt="c2" className="carousel-image" />
       </a>
-      <h2 className="carousel-date">JUN 19, 2023</h2>
+      {/* <h2 className="carousel-date">JUN 19, 2023</h2> */}
       <a href="https://someation.medium.com/the-state-of-the-industry-6068e3d226b7" class="no-underline">
         <h1 className="carousel-text">The State of the Industry</h1>
       </a>
@@ -120,7 +120,7 @@ const ContentBox = () => {
       <a href="https://someation.medium.com/behind-the-scenes-73a75e3a2717" class="no-underline">
         <img src={c4} alt="c4" className="carousel-image" />
       </a>
-      <h2 className="carousel-date">JUN 19, 2023</h2>
+      {/* <h2 className="carousel-date">JUN 19, 2023</h2> */}
       <a href="https://someation.medium.com/behind-the-scenes-73a75e3a2717" class="no-underline">
        <h1 className="carousel-text">Behind the Scenes</h1>
       </a>
@@ -153,12 +153,11 @@ const ContentBox = () => {
     <img src={artists} alt="artists" className="artists" style={{
         margin: 'auto',
       }} />
-      <video autoPlay loop muted playsinline preload="auto" className="homeimg">
+      <video autoPlay loop muted="true" playsinline preload="auto" className="homeimg">
         <source src={videoFile} type="video/mp4"  />
-  
       </video>
 
-      <div id="about" className="section2">
+      <div id= "about" className="section2">
       
       <div className="buttonholder"> 
       <h1 className="buttonlabel">Our Mission</h1>
@@ -183,10 +182,10 @@ const ContentBox = () => {
       
       <h1 className="section3im1">TOUR WITH US</h1>
     
- 
-
       <img src={roadmap} alt="roadmap" className="roadmap" style={{
       }} />
+      <h1 className="buttonlabel">Our Mission</h1>
+
       <h1 className="firststageplan">Tour Dates Announced</h1>
 
 
@@ -280,7 +279,7 @@ const ContentBox = () => {
 
 
   // Blog section 
-    <div id="blog" className="Section3">
+    <div id = "blog" className="Section3">
 
       
       <h1 className="readmore">CRATE DIGGER CATALOG 
@@ -306,17 +305,17 @@ const ContentBox = () => {
 
       <div className="carousel-container">
       <Carousal
-      breakPoints={breakPoints}
-      isRTL={false}
+        breakPoints={breakPoints}
+        isRTL={false}
 
-      autoPlaySpeed={3000}
-      pagination={false}
-    
-    >
-      {duplicatedItems.map((item, index) => (
-        <div key={index} className="carousel-item">
-          {item}
-        </div>
+        autoPlaySpeed={3000}
+        pagination={false}
+      
+      >
+        {duplicatedItems.map((item, index) => (
+          <div key={index} className="carousel-item">
+            {item}
+          </div>
       ))}
    
  
@@ -349,7 +348,7 @@ const ContentBox = () => {
 
     <a href='https://discord.com/invite/QCjqu3KppW'>
       <button className="join-button">
-        Head  {'\n'} Backstage
+        Head <br />Backstage
       </button>
     </a>
  

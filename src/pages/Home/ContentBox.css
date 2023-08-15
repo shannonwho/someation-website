@@ -55,7 +55,7 @@
   
   .homeimg {
     display: flex;
-    width: 1280px;
+    width: 2280px;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -177,7 +177,12 @@
   margin-top: -10%;
   width: 10%;
   height: auto;
-  max-width: calc(100% - 60px) ;
+  max-width: calc(100% - 60px);
+
+}
+
+#roadmap {
+  font-family: 'Gochi Hand';
 
 }
 
@@ -464,6 +469,8 @@
   font-size: 2vw;
   text-align: left;
   color: #A1A1A1;
+  text-align: justify;
+  margin: 0 auto;
 }
 .carousel-text {
   color:white; 
