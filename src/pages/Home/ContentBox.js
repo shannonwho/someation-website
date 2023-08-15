@@ -183,10 +183,10 @@ const ContentBox = () => {
       
       <h1 className="section3im1">TOUR WITH US</h1>
     
- 
-
       <img src={roadmap} alt="roadmap" className="roadmap" style={{
       }} />
+      <h1 className="buttonlabel">Our Mission</h1>
+
       <h1 className="firststageplan">Tour Dates Announced</h1>
 
 
