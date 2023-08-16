@@ -3,7 +3,9 @@
   align-items: center;
   justify-content: space-between;
   border: none;
+  margin: 0 44px;
   margin-bottom: 4px;
+ 
 }
 
 .nav-left {
@@ -59,11 +61,10 @@
 .logo {
   width: 94px;
   height: 76px;
-  margin-left: 68px;
 }
 
 .nav-right {
-  flex: 1;
+
   text-align: right;
 }
 
@@ -77,7 +78,7 @@ button {
   line-height: 80%;
   border: none;
   cursor: pointer;
-  margin-right: 163px;
+  
 }
 .ytLogo {
   width: 42px;
@@ -103,6 +104,26 @@ button {
   display: none;
   align-items: center;
 }
+@media (max-width : 1536px) {
+  .nav-left li {
+    font-size: 28px;
+  }
+}
+@media (max-width : 1280px) {
+  .nav-left li {
+    font-size: 26px;
+  }
+}
+@media (max-width : 1080px) {
+  .nav-left li {
+    font-size: 22px;
+  }
+}
+@media (max-width : 768px) {
+  .nav-left li {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 640px) {
   .mainNev {
     display: none;
@@ -110,16 +131,26 @@ button {
   .mainNev2 {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
   }
   .logo {
     width: 69px;
     height: 71px;
-    padding-left: 30px;
+ 
   }
   button {
     font-size: 20px;
     padding: 6px 12px;
     margin-left: 39px;
     margin-right: 0;
+  }
+}
+@media (max-width:425px) {
+  .mainNev2 {
+    margin: 0px;
+  }
+  button {
+    margin-left: 19px;
   }
 }
