@@ -137,7 +137,6 @@ const settings = {
 };
 
 const ContentBox = () => {
-
 	return (
 		<Container elevation={3} className="marginforContainer">
 			<img
@@ -282,6 +281,7 @@ const ContentBox = () => {
 			</div>
 		</Container>
 	);
+
 };
 
 export default ContentBox;

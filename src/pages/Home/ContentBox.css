@@ -55,23 +55,10 @@
 }
 
 
-.homeimg {
-  display: flex;
-  width: 2280px;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  border-radius: 32px;
-  max-width: calc(100% - 30px);
-  margin: auto;
-}
-
 .section2 {
-  align-items: center;
-  margin-top: 100px;
-}
-
+    align-items: center;
+    margin-top: -20%;
+  }
 
 .homeimg {
   display: flex;
@@ -101,7 +88,6 @@
   margin-left: 10%;
   margin-top: 5vw;
 }
-
 
 
 
@@ -658,7 +644,7 @@
   width: 238px;
   height: 65px;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-family: Gochi Hand;
   font-size: 32px;
   font-weight: 600;
