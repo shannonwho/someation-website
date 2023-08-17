@@ -5,8 +5,6 @@ import logo from "./logo192.png";
 import youtube from "./yt1.png";
 import TwitterIcon from "./tw1.png";
 import InstagramIcon from "./ig1.png";
-import { Router, Route } from "wouter";
-import { Instagram, Twitter } from "@mui/icons-material";
 
 function scrollToElement(id) {
   const element = document.getElementById(id);

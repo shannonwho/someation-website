@@ -1,402 +1,287 @@
-import React, { useState } from 'react';
-import { Paper, Box } from '@mui/material';
-import IconButton from '@mui/material/IconButton';
+import React from 'react';
+import { Paper } from '@mui/material';
 import { styled } from '@mui/system';
-import homeim from './somestagehome.png';
 import img2 from './img2.png';
 import artists from './artistsaudiences.png';
 import layer_1 from './Layer_1.png';
 import layer_2 from './Layer_2.png';
-import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import seper from './seperator.png'
-import sec3im1 from './section3im1.png'
-import roadmap from './roadmap.png'
 import moneyicon from './moneyicon.png'
-import Frame from './Frame.png'
-import Framewx from './framewithx.png'
-import Carousal from "@itseasy21/react-elastic-carousel";
 import c1 from './carouselim1.png'
 import c2 from './carouselim2.png'
 import c4 from './carouselim4.png'
-
-import Frame1 from './Frame1.png'
-import framex from './framex.png'
-import moneyicon2 from './moneyicon2.png'
-import Frame2 from './Frame2.png'
-import Vector8 from './Vector8.png'
-import Vector9 from './Vector9.png'
-import videoFile from './ss-official.mp4'
-import Button from '@mui/material/Button';
+import videoFile from './ss-official.mp4';
+import BlackRoadMap from './black-roadmap.png';
 import "./ContentBox.css";
 import { FaCircle, FaStar, FaMusic } from 'react-icons/fa';
-
 import Slider from "react-slick";
-// Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-
-import Circle from '../../assets/circle';
-import LineWithDashes from '../../assets/lineWithDashes';
-import LeftVactorSvg from '../../assets/leftVactorSvg';
-import RightVactorSvg from '../../assets/rightVactorSvg'
-
 import TourSectionDesktop from './TourSectionDesktop';
 import TourSectionMobile from './TourSectionMobile';
 
-
-const Container = styled(Paper)(({ theme }) => ({
-  backgroundColor: 'black',
-  borderRadius: '30px',
-  paddingTop: '10px',
-  margin: '10px'
-
+const Container = styled(Paper)(() => ({
+	backgroundColor: 'black',
+	borderRadius: '30px',
+	paddingTop: '10px',
+	margin: '10px'
 }));
-/*
-const Rectangle5 = () => (
- <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-   <path opacity="0.16" d="M1.11287 22.4109C0.0992716 21.7979 -0.225521 20.4793 0.387427 19.4657L11.4858 1.11288C12.0988 0.0992796 13.4174 -0.225514 14.431 0.387435L32.7838 11.4858C33.7974 12.0988 34.1222 13.4174 33.5093 14.431L22.4109 32.7838C21.7979 33.7974 20.4793 34.1222 19.4657 33.5093L1.11287 22.4109Z" fill="white"/>
- </svg>
-);
-
-const Star3 = () => (
- <svg xmlns="http://www.w3.org/2000/svg" width="74" height="119" viewBox="0 0 74 119" fill="none">
- <path d="M37.6435 1.56802C39.4346 -0.242118 42.5137 1.11922 42.3802 3.6622L41.2503 25.186C40.4214 40.9741 46.3752 56.3644 57.6133 67.4843L72.9344 82.6441C74.7445 84.4352 73.3832 87.5143 70.8402 87.3808L49.3163 86.2508C33.5283 85.4219 18.138 91.3757 7.01808 102.614L-8.1417 117.935C-9.93278 119.745 -13.0119 118.384 -12.8784 115.841L-11.7484 94.3169C-10.9196 78.5289 -16.8733 63.1385 -28.1115 52.0186L-43.4325 36.8588C-45.2427 35.0678 -43.8813 31.9886 -41.3383 32.1221L-19.8145 33.2521C-4.02648 34.081 11.3639 28.1272 22.4838 16.8891L37.6435 1.56802Z" fill="#FFC14A"/>
-</svg>
-); 
-*/
 
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
+	const { className, style, onClick } = props;
+	return (
+		<div
+			className={className}
+			style={{ ...style, display: "block", background: "red" }}
+			onClick={onClick}
+		/>
+	);
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}
-    />
-  );
+	const { className, style, onClick } = props;
+	return (
+		<div
+			className={className}
+			style={{ ...style, display: "block", background: "green" }}
+			onClick={onClick}
+		/>
+	);
 }
 
+const sliderItems = [
+	{
+		redirectUrl: 'https://someation.medium.com/getting-the-gang-together-1f74ace10b3a',
+		imageLink: c1,
+		heading: 'Getting the Gang Together',
+		description: 'Dive into the inspiring journey of the visionary behind Some·Stage, and discover how he plans to transform the music industry forever...'
+	},
+	{
+		redirectUrl: 'https://someation.medium.com/the-state-of-the-industry-6068e3d226b7',
+		imageLink: c2,
+		heading: 'The State of the Industry',
+		description: 'Unpack the current state of the music industry with us, as we shine a spotlight on the challenges artists and audiences face today...'
+	},
+	{
+		redirectUrl: 'https://someation.medium.com/behind-the-scenes-73a75e3a2717',
+		imageLink: c4,
+		heading: 'Behind the Scenes',
+		description: 'Step backstage for an in-depth tour of the Some·Stage experience. Learn what our platform has in store for audiences and the exciting new experiences that await you.'
+	},
 
+]
+
+const SliderItem = ({ item }) => {
+	const { redirectUrl, imageLink, heading, description } = item;
+	return (
+		<div className="carousel-item">
+			<a
+				href={redirectUrl}
+				class="no-underline"
+			>
+				<img src={imageLink} alt="c1" className="carousel-image" />
+			</a>
+			<a
+				href={redirectUrl}
+				class="no-underline"
+			>
+				<h1 className="carousel-text">{heading}</h1>
+			</a>
+			<h2 className="carousel-caption">
+				{description}
+			</h2>
+		</div>
+	);
+}
+
+const settings = {
+	dots: true,
+	infinite: true,
+	speed: 500,
+	slidesToShow: 2,
+	slidesToScroll: 1,
+	nextArrow: <SampleNextArrow />,
+	prevArrow: <SamplePrevArrow />,
+	responsive: [
+		{
+			breakpoint: 100000,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+
+			}
+		},
+		{
+			breakpoint: 700,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+
+			}
+		},
+		{
+			breakpoint: 320,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+	]
+};
 
 const ContentBox = () => {
 
-  const [showMessage, setShowMessage] = useState(false);
+	return (
+		<Container elevation={3} className="marginforContainer">
+			<img
+				src={artists}
+				alt="artists"
+				className="artists"
+				style={{
+					margin: "auto",
+				}}
+			/>
+			<video
+				autoPlay
+				loop
+				muted="true"
+				playsInline
+				preload="auto"
+				className="homeimg"
+			>
+				<source src={videoFile} type="video/mp4" />
+			</video>
+			<div id="about" className="section2">
+				<div className="sec2MainContainer">
+					<div className="btnhalfContainer">
+						<div className="buttonholder">
+							<h1 className="buttonlabel">Our Mission</h1>
+						</div>
 
-  const handleIconButtonClick = () => {
-    setShowMessage(true);
-  };
+						<h1 className="title3">GET AMPED</h1>
+						<p className="some-stage-helps">
+							At Some·Stage, we're tuning the frequency of live music to a whole
+							new key!
+						</p>
+						<p className="some-stage-helps">
+							It’s simple, we unite artists and audiences in a shared spotlight
+							within an immersive world. Fans have the power to customize their
+							concert experiences while artists are amplified to connect with
+							their global fanbase like never before. Step into Some•Stage and
+							feel the rhythm of a concert experience reimagined, where every
+							beat hits closer to home.
+						</p>
+					</div>
+					<div className='btnhalfContainerImage'>
+						<img src={img2} alt="image2" className="img2" style={{ width: '100%' }} />
+					</div>
+				</div>
+				<div className="speatorMaindiv">
+					<img src={seper} alt="seper" className="seperator" style={{}} />
+				</div>
+			</div>
+			<div id="roadmap" className="section3">
+				<div className="sec3Maindiv">
+					<div>
+						<img src={BlackRoadMap} alt="roadmap" className="roadmap" style={{}} />
+					</div>
+					<div className='tour-with-us-container'>
+						<h1 className="section3im1">TOUR WITH US</h1>
+						<img
+							src={moneyicon}
+							alt="moneyicon"
+							className="moneyicon"
+						/>
+					</div>
+				</div>
+				<div className='tourSectionDesktop'>
+					<TourSectionDesktop />
+				</div>
+				<div className='tourSectionMobile'>
+					<TourSectionMobile />
+				</div>
+			</div>
+			<img src={seper} alt="seper" className="seperator1" style={{}} />
+			{/* // Blog section */}
+			<div id="blog" className="Section3">
+				<h1 className="readmore">
+					CRATE DIGGER CATALOG
+					<br />
+					(the deep cuts)
+					<div className="icon-con">
+						<FaMusic className="music3" />
+						<FaStar className="star2" />
+						<FaCircle className="circle3" />
 
-  const [showMessage1, setShowMessage1] = useState(false);
+						<FaMusic className="music" />
+						<FaCircle className="FaCircle" />
+						<FaMusic className="music2" />
 
-  const handleIconButtonClick2 = () => {
-    setShowMessage1(true);
-  };
-  const [showMessage2, setShowMessage2] = useState(false);
+						<FaStar className="star" />
+					</div>
+				</h1>
 
-  const handleIconButtonClick3 = () => {
-    setShowMessage2(true);
-  };
-  const [showMessage3, setShowMessage3] = useState(false);
+				<div style={{ paddingLeft: '40px', paddingRight: '60px', marginTop: '-40%' }}>
+					<Slider {...settings}>
+						{[...sliderItems, ...sliderItems].map((item, index) => (
+							<div key={index} className="carousel-item carousel-item2" style={{ marginRight: '30px', marginLeft: '30px' }}>
+								<SliderItem item={item} />
+							</div>
+						))}
+					</Slider>
+				</div>
 
-  const handleIconButtonClick4 = () => {
-    setShowMessage3(true);
-  };
-  const [showMessage4, setShowMessage4] = useState(false);
+				<div className="icon-container">
+					<FaStar className="s1" />
+					<FaCircle className="c1" />
+					<FaMusic className="m1" />
+					<FaCircle className="c2" />
+					<FaStar className="s2" />
+					<FaMusic className="m2" />
+				</div>
 
-  const handleIconButtonClick5 = () => {
-    setShowMessage4(true);
-  };
+				<div className="lastsection">
+					<h1 className="mission">JOIN THE BAND</h1>
+					<h2 className="mission-sub">
+						Ready to rock? <br />
+						Head back stage and join us to get in tune with fellow members, jam
+						with the artists, and score VIP access to products, early events,
+						and more!
+						<br /> <br />
+						GANG!
+					</h2>
 
+					<a href="https://discord.com/invite/QCjqu3KppW">
+						<button className="join-button">
+							Head <br />
+							Backstage
+						</button>
+					</a>
+				</div>
+				<div className="icon-container">
+					<FaCircle className="FaCircle3" />
+					<FaMusic className="music5" />
+					<FaMusic className="music4" />
+					<FaStar className="star4" />
+					<FaCircle className="FaCircle1" />
+				</div>
 
-
-  //Blog section 
-
-  const items = [
-    // Replace with your individual carousel items
-    <div className="carousel-item">
-      <a
-        href="https://someation.medium.com/getting-the-gang-together-1f74ace10b3a"
-        class="no-underline"
-      >
-        <img src={c1} alt="c1" className="carousel-image" />
-      </a>
-      {/* <h2 className="carousel-date">JUN 19, 2023</h2> */}
-      <a
-        href="https://someation.medium.com/getting-the-gang-together-1f74ace10b3a"
-        class="no-underline"
-      >
-        <h1 className="carousel-text">Getting the Gang Together</h1>
-      </a>
-      <h2 className="carousel-caption">
-        Dive into the inspiring journey of the visionary behind Some·Stage, and
-        discover how he plans to transform the music industry forever...
-      </h2>
-    </div>,
-    <div className="carousel-item">
-      <a
-        href="https://someation.medium.com/the-state-of-the-industry-6068e3d226b7"
-        class="no-underline"
-      >
-        <img src={c2} alt="c2" className="carousel-image" />
-      </a>
-      {/* <h2 className="carousel-date">JUN 19, 2023</h2> */}
-      <a
-        href="https://someation.medium.com/the-state-of-the-industry-6068e3d226b7"
-        class="no-underline"
-      >
-        <h1 className="carousel-text">The State of the Industry</h1>
-      </a>
-      <h2 className="carousel-caption">
-        Unpack the current state of the music industry with us, as we shine a
-        spotlight on the challenges artists and audiences face today...
-      </h2>
-    </div>,
-    <div className="carousel-item">
-      <a
-        href="https://someation.medium.com/behind-the-scenes-73a75e3a2717"
-        class="no-underline"
-      >
-        <img src={c4} alt="c4" className="carousel-image" />
-      </a>
-      {/* <h2 className="carousel-date">JUN 19, 2023</h2> */}
-      <a
-        href="https://someation.medium.com/behind-the-scenes-73a75e3a2717"
-        class="no-underline"
-      >
-        <h1 className="carousel-text">Behind the Scenes</h1>
-      </a>
-      <h2 className="carousel-caption">
-        Step backstage for an in-depth tour of the Some·Stage experience. Learn
-        what our platform has in store for audiences and the exciting new
-        experiences that await you.
-      </h2>
-    </div>,
-    // Repeat your items here for circular effect
-  ];
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-
-    responsive: [
-      {
-        breakpoint: 100000,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-
-        }
-      },
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-
-        }
-      },
-      {
-        breakpoint: 320,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
-
-  // const breakPoints = [
-  //   { width: 1, itemsToShow: 1 },
-  //   { width: 550, itemsToShow: 2 },
-  //   { width: 768, itemsToShow: 3 },
-  // ];
-
-  // const duplicatedItems = [...items, ...items, ...items];
-
-  // Mission section
-
-  return (
-    <Container elevation={3} className="marginforContainer">
-      {/*
-      <h1 className="title">Artists & Audiences </h1>
-      <h1 className= "title1">Above All</h1>
-       <img src={homeim} alt="main image" className="homeimg" style={{
-        margin: 'auto',
-      }} /> */}
-      <img
-        src={artists}
-        alt="artists"
-        className="artists"
-        style={{
-          margin: "auto",
-        }}
-      />
-      <video
-        autoPlay
-        loop
-        muted="true"
-        playsInline
-        preload="auto"
-        className="homeimg"
-      >
-        <source src={videoFile} type="video/mp4" />
-      </video>
-      <div id="about" className="section2">
-        <div className="sec2MainContainer">
-          <div className="btnhalfContainer">
-            <div className="buttonholder">
-              <h1 className="buttonlabel">Our Mission</h1>
-            </div>
-
-            <h1 className="title3">GET AMPED</h1>
-            <p className="some-stage-helps">
-              At Some·Stage, we're tuning the frequency of live music to a whole
-              new key!
-            </p>
-            <p className="some-stage-helps">
-              It’s simple, we unite artists and audiences in a shared spotlight
-              within an immersive world. Fans have the power to customize their
-              concert experiences while artists are amplified to connect with
-              their global fanbase like never before. Step into Some•Stage and
-              feel the rhythm of a concert experience reimagined, where every
-              beat hits closer to home.
-            </p>
-          </div>
-          <div className='btnhalfContainerImage'>
-            <img src={img2} alt="image2" className="img2" style={{ width : '100%'}} />
-          </div>
-        </div>
-        <div className="speatorMaindiv">
-          <img src={seper} alt="seper" className="seperator" style={{}} />
-        </div>
-      </div>
-      <div id="roadmap" className="section3">
-        <div className="sec3Maindiv">
-          <div>
-            <img src={roadmap} alt="roadmap" className="roadmap" style={{}} />
-          </div>
-          <h1 className="section3im1">TOUR WITH US</h1>
-        </div>
-       <div className='tourSectionDesktop'>
-        <TourSectionDesktop/>
-       </div>
-       <div className='tourSectionMobile'>
-        <TourSectionMobile/>
-       </div>
-      </div>
-      <img src={seper} alt="seper" className="seperator1" style={{}} />
-      {/* // Blog section */}
-      <div id="blog" className="Section3">
-        <h1 className="readmore">
-          CRATE DIGGER CATALOG
-          <br />
-          (the deep cuts)
-          <div className="icon-con">
-            <FaMusic className="music3" />
-            <FaStar className="star2" />
-            <FaCircle className="circle3" />
-
-            <FaMusic className="music" />
-            <FaCircle className="FaCircle" />
-            <FaMusic className="music2" />
-
-            <FaStar className="star" />
-          </div>
-        </h1>
-
-        {/* <div className="carousel-container">
-          <Carousal
-            breakPoints={breakPoints}
-            isRTL={false}
-            autoPlaySpeed={3000}
-            pagination={false}
-          >
-            {duplicatedItems.map((item, index) => (
-              <div key={index} className="carousel-item">
-                {item}
-              </div>
-            ))}
-          </Carousal>
-        </div> */}
-
-        <div style={{ paddingLeft: '40px', paddingRight: '60px', marginTop: '-40%' }}>
-          <Slider {...settings}>
-            {[...items, ...items].map((item, index) => (
-              <div key={index} className="carousel-item carousel-item2" style={{ marginRight: '30px', marginLeft: '30px' }}>
-                {item}
-              </div>
-            ))}
-
-          </Slider>
-        </div>
-
-        <div className="icon-container">
-          <FaStar className="s1" />
-          <FaCircle className="c1" />
-          <FaMusic className="m1" />
-          <FaCircle className="c2" />
-          <FaStar className="s2" />
-          <FaMusic className="m2" />
-        </div>
-
-        <div className="lastsection">
-          <h1 className="mission">JOIN THE BAND</h1>
-          <h2 className="mission-sub">
-            Ready to rock? <br />
-            Head back stage and join us to get in tune with fellow members, jam
-            with the artists, and score VIP access to products, early events,
-            and more!
-            <br /> <br />
-            GANG!
-          </h2>
-
-          <a href="https://discord.com/invite/QCjqu3KppW">
-            <button className="join-button">
-              Head <br />
-              Backstage
-            </button>
-          </a>
-        </div>
-        <div className="icon-container">
-          <FaCircle className="FaCircle3" />
-          <FaMusic className="music5" />
-          <FaMusic className="music4" />
-          <FaStar className="star4" />
-          <FaCircle className="FaCircle1" />
-        </div>
-
-        <div className="page-end">
-          <div className="layer-container2">
-            <img src={layer_2} alt="layer_2" className="layer2" />
-          </div>
-          <img src={layer_1} alt="layer_1" className="layer1" />
-        </div>
-      </div>
-    </Container>
-  );
+				<div className="page-end">
+					<div className="layer-container2">
+						<img src={layer_2} alt="layer_2" className="layer2" />
+					</div>
+					<img src={layer_1} alt="layer_1" className="layer1" />
+				</div>
+			</div>
+		</Container>
+	);
 };
 
 export default ContentBox;

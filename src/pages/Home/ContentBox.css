@@ -902,11 +902,6 @@ c1 {
   margin-bottom: 4px;
 }
 
-
-/* .tourWithInfo {
-  position: relative;
-  top: -115px;
-} */
 @media (max-width : 1536px) {
   .sec3Maindiv {
     max-width: 1280px;
@@ -919,6 +914,7 @@ c1 {
   .stageplan2 {
     margin-top: 40px;
   }
+
   .Frame1 {
     margin-right: 140px;
   }
@@ -933,25 +929,28 @@ c1 {
     max-width: 1050px;
   }
 
-  .firststageplan,
-  .stageplan2 {
+  .firststageplan, .stageplan2 {
     font-size: 42px;
   }
+  
   .Frame1 {
     margin-right: 130px;
   }
 }
 
-@media (max-width : 1280px) {
+@media (max-width: 1280px) {
   .stage3con {
     max-width: 430px;
   }
+  
   .Frame1 {
     margin-right: 80px;
   }
+  
   .join-button {
     width: 210px;
-   }
+  }
+
   .some-stage-helps {
     font-size: 22px;
     line-height: 26px;
@@ -989,10 +988,10 @@ c1 {
   }
   .stage5con {
     max-width: 450px;
-}
-.container3 .Frame2 {
-  margin-right: 73px;
-}
+  }
+  .container3 .Frame2 {
+    margin-right: 73px;
+  }
 }
 
 @media (max-width : 1080px) {
@@ -1000,7 +999,6 @@ c1 {
     font-size: 22px;
     line-height: 26px;
   }
-
 
   .firstPartsvg svg,
   .secondPartSvg svg {
@@ -1025,27 +1023,30 @@ c1 {
   }
   .join-button {
     width: 200px;
-   }
+  }
 }
 
-@media (max-width : 992px) {
-  
+@media (max-width: 992px) {
   .section2 {
     margin-top: 80px;
   } 
+  
   .section3 {
     margin-top: 80px;
   }
+  
   .mainNev {
     margin: 0px 25px;
   }
+  
   .seperator1 {
     margin-top: 15%;
-
   }
+  
   .mobileBottomImages img{
     height: 240px;
   }
+  
   .join-button {
     width: 190px;
    }
@@ -1085,6 +1086,8 @@ c1 {
   .sec3Maindiv .roadmap {
     width: 62px;
     height: 52px;
+    position: relative;
+    right: 9px;
   }
 
   .thirdpart,
@@ -1158,12 +1161,10 @@ c1 {
     font-size: 26px;
     line-height: 20px;
     padding: 4px 10px;
-}
+  }
 }
 
 @media (max-width:768px) {
-
-  
   .section2 {
     margin-top: 60px;
   } 
@@ -1200,7 +1201,27 @@ c1 {
   }
 }
 
+@media (min-width: 641px) {
+  .tour-with-us-container img {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 640px) {
+  .tourSectionMobile {
+    margin-top: -170px;
+  }
+
+  .tour-with-us-container {
+    text-align: right;
+  }
+  
+  .tour-with-us-container img {
+    margin-top: 30px;
+    padding-right: 35px;
+    width: 82px;
+  }
+
   .firststageplan .stageplan2 {
     font-size: 26px;
   }
@@ -1216,18 +1237,16 @@ c1 {
   }
 
   .firstpartText {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 18px;
   }
+
   .mobileBottomImages {
     margin-top: 30%;
   }
-
 }
 
-@media (max-width :525px) {
- 
-  
+@media (max-width: 525px) { 
   .mobileBottomImages img{
     height: 190px;
   }
