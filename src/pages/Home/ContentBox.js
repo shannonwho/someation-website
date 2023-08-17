@@ -196,7 +196,7 @@ const ContentBox = () => {
 
     responsive: [
       {
-        breakpoint: 1920,
+        breakpoint: 100000,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,

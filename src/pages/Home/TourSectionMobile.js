@@ -68,7 +68,7 @@ export default function TourSectionMobile() {
                 </div>
                 <div className="circleTourMain">
                     <div className="tourMainDiv">
-                        <div className="tourDatesAnnounced">
+                        <div className={`${index === 4 ? 'selection' : ''} ${index === 3 ? 'greenRoomTitle' : ''} tourDatesAnnounced`}>
                             <h1 className="firststageplan">{data.title}</h1>
 
                             {/* Text to display when the button is clicked */}
@@ -138,9 +138,9 @@ export default function TourSectionMobile() {
             )}
 
             <div className='mobileBottomImages'>
-                <img src={Frame} alt="Frame" className="" style={{height:'240px'}} />
-                <img src={Framewx} alt="Framewx" className="" style={{height:'240px'}} />
-                <img src={Frame2} alt="Frame2" className="" style={{height:'240px'}} />
+                <img src={Frame} alt="Frame" className=""  />
+                <img src={Framewx} alt="Framewx" className="" />
+                <img src={Frame2} alt="Frame2" className="" />
             </div>
 
         </>

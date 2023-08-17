@@ -67,17 +67,10 @@
     margin-right: 10px; /* Adjust the spacing between the tabs */
     color: white; /* Set the text color of the tabs to white */
     font-family: Gochi Hand;
-    font-size: 2vw;
+    font-size: 40px;
     font-weight: 400;
   }
 
-  .footer-menu li {
-    margin-right: 10px; /* Adjust the spacing between the tabs */
-    color: white; /* Set the text color of the tabs to white */
-    font-family: Gochi Hand;
-    font-size: 2vw;
-    font-weight: 400;
-  }
   
   .footer-menu li::after {
     content: '';  /* This is the dot */
@@ -109,4 +102,39 @@
     width: 20%;
     height: auto; 
     cursor: pointer; 
+  }
+  @media (max-width: 1380px) {
+    .footer-menu li {
+      font-size: 36px;
+    }
+  }
+  @media (max-width: 1280px) {
+    .footer-menu li {
+      font-size: 32px;
+    }
+  }
+  @media (max-width: 1080px) {
+    .footer-menu li {
+      font-size: 28px;
+    }
+  }
+  @media (max-width: 992px) {
+    .footer-menu li {
+      font-size: 26px;
+    }
+  }
+  @media (max-width: 768px) {
+    .footer-menu li {
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 640px) {
+    .footer-menu li {
+      font-size: 20px;
+    }
+  }
+  @media (max-width : 420px) {
+    .footer-menu li {
+      margin-right: 0px;
+    }
   }
