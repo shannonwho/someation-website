@@ -116,16 +116,27 @@
     .footer-menu li {
       	font-size: 24px;
     }
+
 }
 
 @media (max-width: 640px) {
     .footer-menu li {
       	font-size: 20px;
     }
+
+    .footer-last{
+        padding-left: 30px;
+
+    }
 }
 
 @media (max-width : 420px) {
     .footer-menu li {
       	margin-right: 0px;
+    }
+
+    .footer-last{
+        padding-left: 30px;
+
     }
 }
