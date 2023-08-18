@@ -1266,7 +1266,7 @@ c1 {
 
 @media screen and (max-width: 420px) {
   .buttonlabel {
-    font-size: 18px;
+    font-size: 15px;
       /* 120% */
   }
  
@@ -1278,7 +1278,7 @@ c1 {
   }
   .buttonholder {
     height: 30px;
-    width: 110px;
+    width: 100px;
   } 
   .section2 {
     margin-top: 50px;
@@ -1288,13 +1288,13 @@ c1 {
 
 @media screen and (max-width: 400px) {
   .buttonlabel {
-    font-size: 18px;
+    font-size: 15px;
       /* 120% */
   }
 
   .buttonholder {
     height: 30px;
-    width: 110px;
+    width: 100px;
   } 
 
   .title3 {
