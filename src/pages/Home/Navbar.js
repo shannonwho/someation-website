@@ -102,7 +102,7 @@ const Navbar = () => {
         <div style={{ marginLeft: "30px" }}>
           <div className="ytTwLogoMain">
             <div>
-              <a href="/">
+              <a href="https://youtube.com/@somestage">
                 <img
                   src={youtube}
                   alt="yt1"
@@ -114,13 +114,13 @@ const Navbar = () => {
               </a>
             </div>
             <div>
-              <a href="/">
+              <a href="https://twitter.com/somestage">
                 <img src={TwitterIcon} alt="tw1" className="twLogo" />
               </a>
             </div>
           </div>
           <div className="textAlign">
-            <a href="/">
+            <a href="https://instagram.com/some.stage">
               <img
                 src={InstagramIcon}
                 alt="ig1"
