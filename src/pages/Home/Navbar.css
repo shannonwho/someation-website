@@ -85,17 +85,17 @@ button {
   
 }
 .ytLogo {
-  width: 42px;
+  width: 39px;
   height: 32px;
 }
 .twLogo {
-  width: 28px;
-  height: 29px;
+  width: 34px;
+  height: 34px;
   margin-left: 10px;
 }
 .igLogo {
-  width: 38px;
-  height: 27px;
+  width: 60px;
+  height: 32px;
 }
 .ytTwLogoMain {
   display: flex;
