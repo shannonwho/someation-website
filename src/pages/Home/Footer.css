@@ -6,41 +6,26 @@
     padding: 0px;
     border: none;
     margin-top: 10%;
-  }
+}
   
-  .footer-middle {
-
-    
+.footer-middle {
     align-items: center;
     position: relative;
-/*
-    font-family: 'Jost', sans-serif;
-    font-weight: 900;
-    text-shadow: 
-      -0.2vw -0.2vw 0 rgb(0, 0, 0),
-      0.2vw -0.2vw 0 rgb(0, 0, 0),
-      -0.2vw 0.2vw 0 black,
-      0.2vw 0.2vw 0 black;
-      */ 
-  }
-  
+}  
 
-  .logo1 {
+.logo1 {
     width: 30vw;
-    height: auto;
-   
+    height: auto;   
     position: relative;
-  }
+}
 
-
-  .footer-text {
+.footer-text {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: white;
-    font-size: 2vw;
-    
-  }
+    font-size: 2vw;    
+}
 
-  .footbutton {
+.footbutton {
     margin-top: 1vw;
     margin-left: 32%;
     background-color: #ffffff;
@@ -52,61 +37,106 @@
     font-size: 1.5vw;
     font-weight: 500;
     cursor: pointer;
-  }
+}
 
 .footer-menu {
     display: flex;
     align-items: center;
     text-align: left;
     margin-top: -10%;
-    padding: 3vw;
-    
-  }
+    padding: 3vw;    
+}
   
-  .footer-menu li {
-    margin-right: 10px; /* Adjust the spacing between the tabs */
-    color: white; /* Set the text color of the tabs to white */
+.footer-menu li {
+    margin-right: 10px;
+    color: white;
     font-family: Gochi Hand;
-    font-size: 2vw;
+    font-size: 40px;
     font-weight: 400;
-  }
-
-  .footer-menu li {
-    margin-right: 10px; /* Adjust the spacing between the tabs */
-    color: white; /* Set the text color of the tabs to white */
-    font-family: Gochi Hand;
-    font-size: 2vw;
-    font-weight: 400;
-  }
+}
   
-  .footer-menu li::after {
-    content: '';  /* This is the dot */
-    margin-right: 8px;  /* Adjust as needed */
-    margin-left: 8px;  /* Adjust as needed */
-    color: white;  /* Set the dot color */
+.footer-menu li::after {
+    content: ''; 
+    margin-right: 8px;
+    margin-left: 8px;
+    color: white;
 }
 
-  .footer-menu li:first-child::before {
-      content: '';  /* No dot before the first item */
-  }
+.footer-menu li:first-child::before {
+    content: '';
+}
 
-  .footer-menu li:last-child::after {
-    content: '';  /* No dot before the first item */
-  }
-  .yt1 {
+.footer-menu li:last-child::after {
+    content: '';
+}
+
+.yt1 {
     width: 25%;
     height: auto;
     cursor: pointer;  
-  }
+}
 
-  .ig1 {
+.ig1 {
     width: 35%;
     height: auto; 
     cursor: pointer; 
-  }
+}
 
-  .tw1 {
+.tw1 {
     width: 20%;
     height: auto; 
     cursor: pointer; 
-  }
+}
+  
+@media (max-width: 1380px) {
+    .footer-menu li {
+      	font-size: 36px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .footer-menu li {
+      	font-size: 32px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .footer-menu li {
+      	font-size: 28px;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-menu li {
+      	font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-menu li {
+      	font-size: 24px;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .footer-menu li {
+      	font-size: 20px;
+    }
+
+    .footer-last{
+        padding-left: 30px;
+
+    }
+}
+
+@media (max-width : 420px) {
+    .footer-menu li {
+      	margin-right: 0px;
+    }
+
+    .footer-last{
+        padding-left: 30px;
+
+    }
+}
