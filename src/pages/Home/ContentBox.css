@@ -57,18 +57,18 @@
 
 .section2 {
     align-items: center;
-    margin-top: -20%;
+    margin-top: 10%;
   }
 
 .homeimg {
   display: flex;
-  width: 2280px;
+  width: 1580px;
   height: auto;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
   border-radius: 32px;
-  max-width: calc(100% - 30px);
+  max-width: calc(80% - 30px);
   margin: auto;
 }
 

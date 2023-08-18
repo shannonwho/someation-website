@@ -189,7 +189,7 @@ const ContentBox = () => {
 			<div id="roadmap" className="section3">
 				<div className="sec3Maindiv">
 					<div>
-						<img src={BlackRoadMap} alt="roadmap" className="roadmap" style={{}} />
+						<img src={BlackRoadMap} alt="roadmap" className="roadmap" style={{width: '130%'}} />
 					</div>
 					<div className='tour-with-us-container'>
 						<h1 className="section3im1">TOUR WITH US</h1>
