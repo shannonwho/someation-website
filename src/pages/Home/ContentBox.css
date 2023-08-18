@@ -458,7 +458,6 @@
   line-height: 2vw;
   margin-bottom: 50px;
   /* 140% */
-
 }
 
 .fifthpart {
@@ -1189,12 +1188,22 @@ c1 {
 }
 
 @media (min-width: 641px) {
+
+  .buttonlabel {
+    font-size: 23px;
+      /* 120% */
+  }
   .tour-with-us-container img {
     display: none;
   }
 }
 
 @media screen and (max-width: 640px) {
+  .buttonlabel {
+    font-size: 23px;
+      /* 120% */
+  }
+
   .tourSectionMobile {
     margin-top: -170px;
   }
@@ -1234,6 +1243,10 @@ c1 {
 }
 
 @media (max-width: 525px) { 
+  .buttonlabel {
+    font-size: 23px;
+      /* 120% */
+  }
   .mobileBottomImages img{
     height: 190px;
   }
@@ -1252,6 +1265,10 @@ c1 {
 }
 
 @media screen and (max-width: 420px) {
+  .buttonlabel {
+    font-size: 23px;
+      /* 120% */
+  }
  
   .mobileBottomImages img{
     height: 180px;
@@ -1270,6 +1287,10 @@ c1 {
 }
 
 @media screen and (max-width: 400px) {
+  .buttonlabel {
+    font-size: 23px;
+      /* 120% */
+  }
   .title3 {
     font-size: 36px;
     /* Reduce the font size for smaller screens */
