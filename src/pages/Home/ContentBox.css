@@ -62,13 +62,13 @@
 
 .homeimg {
   display: flex;
-  width: 1580px;
+  width: 1680px;
   height: auto;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
   border-radius: 32px;
-  max-width: calc(80% - 30px);
+  max-width: calc(86% - 30px);
   margin: auto;
 }
 
@@ -1266,7 +1266,7 @@ c1 {
 
 @media screen and (max-width: 420px) {
   .buttonlabel {
-    font-size: 23px;
+    font-size: 18px;
       /* 120% */
   }
  
@@ -1277,8 +1277,8 @@ c1 {
     margin-top: 40%;
   }
   .buttonholder {
-    height: 40px;
-    width: 160px;
+    height: 30px;
+    width: 110px;
   } 
   .section2 {
     margin-top: 50px;
@@ -1288,14 +1288,21 @@ c1 {
 
 @media screen and (max-width: 400px) {
   .buttonlabel {
-    font-size: 23px;
+    font-size: 18px;
       /* 120% */
   }
+
+  .buttonholder {
+    height: 30px;
+    width: 110px;
+  } 
+
   .title3 {
     font-size: 36px;
     /* Reduce the font size for smaller screens */
     line-height: 20px;
     /* You can adjust this value to control the line height */
+    margin-top:35px;
   }
   .section2 {
     margin-top: 40px;
