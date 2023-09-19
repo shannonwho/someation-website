@@ -37,6 +37,10 @@ const Footer = () => {
 					<img src={tw1} alt="tw1" className="tw1" /> 
 				</a>
       		</div>
+			<div className="footer-info">
+				© Someation <br/>
+				Contact: info@someation.com
+      		</div>
       	</div>
     );
 };
