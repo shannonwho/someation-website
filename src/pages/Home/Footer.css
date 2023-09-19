@@ -88,6 +88,14 @@
     cursor: pointer; 
 }
   
+.footer-info {
+    position: relative;
+    float: right;
+    text-align: right;        
+    margin-inline-start: auto;    
+    color: #ffffff;
+}
+
 @media (max-width: 1380px) {
     .footer-menu li {
       	font-size: 36px;
@@ -128,6 +136,10 @@
         padding-left: 30px;
 
     }
+
+    .footer-info {
+        font-size: 10px;
+    }
 }
 
 @media (max-width : 420px) {
@@ -137,6 +149,9 @@
 
     .footer-last{
         padding-left: 30px;
-
+    }
+    
+    .footer-info {
+        font-size: 10px;
     }
 }
