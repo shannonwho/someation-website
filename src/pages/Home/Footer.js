@@ -39,7 +39,7 @@ const Footer = () => {
       		</div>
 			<div className="footer-info">
 				© Someation <br/>
-				Contact: info@someation.com
+				info@someation.com
       		</div>
       	</div>
     );
