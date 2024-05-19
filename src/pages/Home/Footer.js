@@ -2,7 +2,7 @@ import React from 'react';
 import "./Footer.css";
 import { Link } from 'react-router-dom';
 import "./Navbar.css";
-import logo1 from './logo1.png'
+import logo1 from './concertid-logo-full.png'
 import ig1 from './ig1.png';
 import yt1 from './yt1.png';
 import tw1 from './tw1.png'; 
@@ -27,13 +27,13 @@ const Footer = () => {
         		<img src={logo1} alt="logo1" className="logo1"/>
         	</div>
       		<div className="footer-last">
-				<a href='https://youtube.com/@somestage'>
+				<a href='https://youtube.com/@my_concertid'>
 					<img src={yt1} alt="yt1" className="yt1" /> 
 				</a>
-				<a href='https://instagram.com/some.stage'>
+				<a href='https://instagram.com/my_concertid'>
 					<img src={ig1} alt="ig1" className="ig1" /> 
 				</a>
-				<a href='https://twitter.com/somestage'>
+				<a href='https://twitter.com/my_concertid'>
 					<img src={tw1} alt="tw1" className="tw1" /> 
 				</a>
       		</div>

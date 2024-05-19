@@ -34,7 +34,7 @@ export default function TourSectionDesktop() {
               {/* Text to display when the button is clicked */}
               <div className="firstpartMain">
                 <p className="firstpartText">
-                  Brace yourselves, music lovers! some·stage is plugging in to
+                  Brace yourselves, music lovers! Concert·ID is plugging in to
                   shake up your concert experience. We're calling all fans to
                   join the journey, take our survey, and help us fine-tune
                   this rocking revolution. Your input will help us set the
@@ -147,7 +147,7 @@ export default function TourSectionDesktop() {
             <h1 className="firststageplan">Setlist Selection</h1>
             We're dialing in the talent you love! As we sign on big-name
             artists, you'll be front-row for the announcements. Because at
-            Some·Stage, you're not just part of the crowd, control of the
+            Concert·ID, you're not just part of the crowd, control of the
             concert is in your hands!
           </p>
         </div>
