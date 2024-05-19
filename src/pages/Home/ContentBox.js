@@ -54,7 +54,7 @@ const sliderItems = [
 		redirectUrl: 'https://someation.medium.com/getting-the-gang-together-1f74ace10b3a',
 		imageLink: c1,
 		heading: 'Getting the Gang Together',
-		description: 'Dive into the inspiring journey of the visionary behind Some·Stage, and discover how he plans to transform the music industry forever...'
+		description: 'Dive into the inspiring journey of the visionary behind concertID, and discover how he plans to transform the music industry forever...'
 	},
 	{
 		redirectUrl: 'https://someation.medium.com/the-state-of-the-industry-6068e3d226b7',
@@ -66,7 +66,7 @@ const sliderItems = [
 		redirectUrl: 'https://someation.medium.com/behind-the-scenes-73a75e3a2717',
 		imageLink: c4,
 		heading: 'Behind the Scenes',
-		description: 'Step backstage for an in-depth tour of the Some·Stage experience. Learn what our platform has in store for audiences and the exciting new experiences that await you.'
+		description: 'Step backstage for an in-depth tour of the Concert·ID experience. Learn what our platform has in store for audiences and the exciting new experiences that await you.'
 	},
 
 ]
@@ -166,14 +166,14 @@ const ContentBox = () => {
 
 						<h1 className="title3">GET AMPED</h1>
 						<p className="some-stage-helps">
-							At Some·Stage, we're tuning the frequency of live music to a whole
+							At Concert·ID, we're tuning the frequency of live music to a whole
 							new key!
 						</p>
 						<p className="some-stage-helps">
 							It’s simple, we unite artists and audiences in a shared spotlight
 							within an immersive world. Fans have the power to customize their
 							concert experiences while artists are amplified to connect with
-							their global fanbase like never before. Step into Some•Stage and
+							their global fanbase like never before. Step into Concert·ID and
 							feel the rhythm of a concert experience reimagined, where every
 							beat hits closer to home.
 						</p>

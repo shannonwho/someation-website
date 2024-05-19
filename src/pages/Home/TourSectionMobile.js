@@ -14,7 +14,7 @@ import LeftVactorSvg from '../../assets/leftVactorSvg';
 const DummyArray = [
     { 
         title: 'Tour Dates Announced', 
-        text: 'Brace yourselves, music lovers! some·stage is plugging in to shake up your concert experience. We are calling all fans to join the journey, take our survey, and help us fine-tune this rocking revolution. Your input will help us set the stage.' 
+        text: 'Brace yourselves, music lovers! Concert·ID is plugging in to shake up your concert experience. We are calling all fans to join the journey, take our survey, and help us fine-tune this rocking revolution. Your input will help us set the stage.' 
     },
     { 
         title: 'Backstage Access', 
@@ -30,7 +30,7 @@ const DummyArray = [
     },
     { 
         title: 'Setlist Selection', 
-        text: 'We are dialing in the talent you love! As we sign on big-name artists, you ll be front-row for the announcements. Because at Some·Stage, you are not just part of the crowd, control of the concert is in your hands!' 
+        text: 'We are dialing in the talent you love! As we sign on big-name artists, you ll be front-row for the announcements. Because at Concert·ID, you are not just part of the crowd, control of the concert is in your hands!' 
     },
 ]
 
